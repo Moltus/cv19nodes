@@ -1,0 +1,20 @@
+{
+  "name": "cv19nodes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "latest-version": "^4.0.0",
+    "node": "^10.15.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benoît CL\u001b[3;3~\u001b[3;3~\u001b[3;3~\u001b[3;3~lément",
+  "license": "ISC"
+}
