@@ -4,126 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>nodes</title>
-  <link href="https://fonts.googleapis.com/css?family=Anton|Roboto:100,300,400,500,700" rel="stylesheet">
+  <title>CV Benoît Clément 2019</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
-  <div class="container">
-    <div class="badge" id="comm">
-      <svg viewBox="0 0 90 90">
-        <g id="Layer_3">
-        </g>
-        <g id="Layer_2">
-          <path id="comm__bg" class="badge__bg" d="M45,2C21.3,2,2,21.3,2,45s19.2,43,43,43s43-19.2,43-43S68.7,2,45,2z M45,62.1
-        		c-9.5,0-17.1-7.7-17.1-17.1S35.5,27.9,45,27.9S62.1,35.5,62.1,45S54.5,62.1,45,62.1z" />
-        </g>
-        <g id="Layer_1">
-
-          <path id="comm__path" class="badge__path"
-            d="M64.2,28.9c8.9,10.7,7.4,26.5-3.2,35.4s-26.5,7.4-35.4-3.2s-7.4-26.5,3.2-35.4
-        		S55.4,18.2,64.2,28.9z" />
-          <text class="badge__text">
-            <textPath xlink:href="#comm__path"> -- COMM -- COMM -- COMM
-            </textPath>
-          </text>
-        </g>
-      </svg>
-    </div>
-
-    <div class="connections" id="node1__connections"></div>
+  <div id="wrapper" class="wrapper">
+    
   </div>
 
-  <!-- <img src="comm_donnut.svg" width="8alt=""> -->
-  
-  <div class="container">
-    <div class="node" id="node1">
-    Lorem
-    </div>
-    <div class="connections" id="node1__connections"></div>
-  </div>
-
-  <div class="container">
-    <div class="node" id="node2">
-    Voluptas
-    </div>
-    <div class="connections" id="node2__connections"></div>
-  </div>
-
-  <div class="container">
-    <div class="node" id="node3">
-    Lorem
-    </div>
-    <div class="connections" id="node3__connections"></div>
-  </div>
-  <div class="container">
-    <div class="node" id="node4">
-    Dignissimos
-    </div>
-    <div class="connections" id="node4__connections"></div>
-  </div>
-
-  <div class="container">
-    <div class="node" id="node5">
-    Lorem
-    </div>
-    <div class="connections" id="node5__connections"></div>
-  </div>
-
-  <div class="container">
-    <div class="node" id="node6">
-    Architecto
-    </div>  
-    <div class="connections" id="node6__connections"></div>
-  </div>  
-
-  <button type="button" id="toggle-options" onclick="toggleOptions()">Show options</button>
-  <div class="coords-info">
-    <button class="options" type="button" onclick="randomPositions()">Random positions</button>
-    <button class="options" type="button" onclick="resetPositions()">Reset positions</button>
-    <button class="options" type="button" onclick="getNodesCoords()">get coords</button>
-    <span class="options" id="infoCoords"></span>
+  <button type="button" class="btn" id="toggle-options">Show options</button>
+  <div id="options" class="options__group">
+    <button type="button" class="btn options__content" id="random-pos">
+      Random positions</button>
+    <button type="button" class="btn options__content" id="random-colors">
+      Random colors</button>
+    <button type="button" class="btn options__content" id="reset-pos">
+      Reset positions</button>
+    <button type="button" class="btn options__content" id="get-coords">
+      get coords</button>
+    <span id="info-coords" class="options__content"></span>
   </div>
 
   <script src="scripts/nodes.js"></script>
+  <script src="scripts/app.js"></script>
   <script src="scripts/mouse_drag.js"></script>
-  <script>
-  const options = document.getElementsByClassName('options');
-  const optionsBtn = document.getElementById('toggle-options');
-  function toggleOptions() {
-    for (let i of options) i.classList.toggle('active');
-    optionsBtn.classList.toggle('active');
-    optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Hide Options" : "Show options";  
-  }
+  <script src="scripts/buttons.js"></script>
 
-  function randomPositions(){
-    for (let n of nodes) {
-      if (n.animation) return;
-      rndX = Math.floor(Math.random() * 75) + 1;
-      rndY = Math.floor(Math.random() * 60) + 10;
-      n.move(rndX, rndY, 'vw');
-    }
-  }
-
-  function resetPositions() {
-    for (let n of nodes) {
-      if (n.animation) return;
-      n.move(...n.initPos);
-    }
-  }
-
- 
-  const infoCoords = document.getElementById('infoCoords');
-  function getNodesCoords(){
-    let infoText = '';
-    for (let n of nodes){
-      let coords = n.getCoords().map(Math.round);
-      infoText += `  ${n.id}  x: ${coords[0]} y: ${coords[1]} |`;
-      console.log(infoText);
-    }
-    infoCoords.textContent = infoText;
-  }
-  </script>
 </body>
 </html>

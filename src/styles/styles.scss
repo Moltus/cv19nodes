@@ -1,16 +1,30 @@
+$creaColor: #6D214F;
+$codeColor: #3B3B98;
+$commColor: #5F3280;
+
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(42, 42, 42);
-    background-image: url(bg.svg);
+    background-color: #2a2a2a;
+    background-image: url(../images/bg.svg);
     font-family: 'Roboto', sans-serif;
     /* position: relative; /* for touch devices navigation */
     overflow: hidden;
     }
   
+p {
+  margin: 0;
+  padding: 0;
+
+  &~p {
+    margin-top: 10px;
+  }
+}
+
 .container {
   position: relative;
 }
+
 
 button {
   background-color: #555;
@@ -20,104 +34,74 @@ button {
   display: inline-block;
   transition: all 500ms;
   border: 2px solid #555;
-}
 
-
-button:hover {
+  &:hover {
   background-color: #fff;
   border: 2px solid #555;
   color: #555;
+  }
 }
 
-.options {
+#options {
   display: none;
+
+  &.active {
+    display: inline-block;
+  }
 }
 
-.options.active {
-  display: inline-block;
+.options__content {
+  display: inline; 
 }
 
-.coords-info {
-  display: inline-block;
-}
-
-#infoCoords {
+#info-coords {
   color: #fff;
-  font-size: .8em;
+  font-size: .8em; 
 }
+
 .node {
   position: absolute;
   left: 500px;
   top: 400px;
   z-index: 10;
   margin: 0;
-  padding: 30px;
+  padding: 15px 20px;
   cursor: pointer;
-  font-weight: 100;
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 1.1rem;
   color: #fff;
   width: 200px;
   border: 1px solid #fff;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px #000;
-  /* transition: left 1s;
-  transition: top 1s; */
-}
-
-#node1 {
-  background-color: rgb(67, 73, 66);
-}
-
-#node2 {
-  background-color: rgb(73, 69, 66);
-}
-
-#node3 {
-  background-color: rgb(66, 70, 73);
-}
-
-#node4 {
-  background-color: rgb(73, 66, 69);
-}
-
-#node5 {
-  background-color: rgb(73, 66, 73);
-}
-
-#node6 {
-  background-color: rgb(73, 72, 66);
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }
 
 .badge {
   position: absolute;
+  left: 500px;
+  top: 400px;
   width: 90px;
   height: 90px;
+  z-index: 10;
   cursor: pointer;
   padding: 0;
   border-radius: 100%;
-  overflow: visible;
-  box-shadow: 5px 5px 10px #000;
-}
-
-.badge__text {
-  font-size: 13px;
-  font-weight: 100;
-  fill: #fff;
-}
-
-.badge__bg {
-  stroke: #fff;
-  stroke-miterlimit: 10;
-}
-
-#comm {
   background-color: transparent;
-  /* position: relative; */
-}
-#comm__path {
-  fill: transparent;
-}
-#comm__bg {
-  fill: #3B3B98;;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5); 
+
+  &__text {
+    font-size: .9rem;
+    font-weight: 300;
+    fill: #fff; 
+  }
+  &__path {
+    fill: transparent; 
+  }
+  &__bg {
+    stroke: #fff;
+    stroke-miterlimit: 10; 
+  }
 }
 
 .connections {
@@ -135,59 +119,62 @@ button:hover {
 
 .link {
   position: absolute;
+  
+  &--top-left {
+    border-top-left-radius: 50px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  
+  &--top-right {
+    border-top-right-radius: 50px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  
+  &--bottom-left {
+    border-bottom-left-radius: 50px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  
+  &--bottom-right {
+    border-bottom-right-radius: 50px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
 }
 
-.link--top-left {
-  border-top-left-radius: 50px;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-}
-
-.link--top-right {
-  border-top-right-radius: 50px;
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
-
-.link--bottom-left {
-  border-bottom-left-radius: 50px;
-  border-bottom: 1px solid #fff;
-  border-left: 1px solid #fff;
-}
-
-.link--bottom-right {
-  border-bottom-right-radius: 50px;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
 
 .arrow {
   position: absolute;
-  width: 0; 
-  height: 0; 
-}
-
-.arrow--up {
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 14px solid #fff;
-}
-
-.arrow--down {   
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 14px solid #fff;
   
+  &--up {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid #fff;
+  }
+  
+  &--down {   
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 14px solid #fff;  
+  }
+  
+  &--right {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 14px solid #fff;
+  }
+  
+  &--left {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right:14px solid #fff; 
+  }
 }
 
-.arrow--right {
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 14px solid #fff;
-}
-
-.arrow--left {
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-right:14px solid #fff; 
+/* This to prevent clicks to select svg child elements */
+.node-container > * > * {
+  pointer-events: none;
 }
