@@ -62,7 +62,7 @@ const codeNode2Txt = [
 const codeNode2 = new Node("code2", [642, 583], codeNode2Txt, codeColor);
 
 const commNode1Txt = [
-  ["• \"Zobar\" pièce théâtre de M. Tracke. Théâtre de Ménilmontant Paris 2013-2014"],
+  ["• \" ZOBAR \" pièce mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014"],
   ["• COURS FLORENT Paris 2007-2010"],
   ["Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement."],
 ];
