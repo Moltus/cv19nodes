@@ -57,6 +57,15 @@ button {
   border: 1px solid #fff;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
+  .node__image {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    border-radius: 100%; }
+    .node__image img {
+      padding: 10px;
+      width: 70px;
+      height: 70px; }
 
 .badge {
   position: absolute;

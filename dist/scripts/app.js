@@ -21,12 +21,12 @@ const creaColor = '#6D314F';
 const codeColor = '#3B3B78';
 const commColor = '#5F3270';
 
-const textBadge1 = " --------- CREA -------- CREA";
-const badge1 = new Badge("crea", [468, 495], textBadge1, creaColor);
-const textBadge2 = " --------- CODE -------- CODE";
-const badge2 = new Badge("code", [718, 449], textBadge2, codeColor);
-const textBadge3 = "------- COMM ------ COMM ";
-const badge3 = new Badge("comm", [968, 495], textBadge3, commColor);
+const creaText = " --------- CREA -------- CREA";
+const creaBadge = new Badge("crea-badge", [468, 495], creaText, creaColor);
+const codeText = " --------- CODE -------- CODE";
+const codeBadge = new Badge("code-badge", [718, 458], codeText, codeColor);
+const commText = "------- COMM ------ COMM ";
+const commBadge = new Badge("comm-badge", [968, 495], commText, commColor);
 
 const creaNode1Txt = [
   ["• INFOGRAPHISTE 2D/3D freelance 2005-2007, 2011-2018"],
@@ -49,7 +49,7 @@ const codeNode1Txt = [
   ["• IFOCOP DÉVELOPPEUR WEB Montigny-le-Bretonneux 2018-2019"],
   ["Formation diplomante bac+3 en alternance. Front-end + Back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."]
 ];
-const codeNode1 = new Node("code1", [642, 242], codeNode1Txt, codeColor);
+const codeNode1 = new Node("code1", [642, 262], codeNode1Txt, codeColor);
 
 const codeNode2Txt = [
   ["• FORMATIONS EN LIGNE UDEMY"],
@@ -66,7 +66,7 @@ const commNode1Txt = [
   ["• COURS FLORENT Paris 2007-2010"],
   ["Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement."],
 ];
-const commNode1 = new Node("comm1", [932, 250], commNode1Txt, commColor);
+const commNode1 = new Node("comm1", [932, 235], commNode1Txt, commColor);
 
 const commNode2Txt = [
   ["• VENTE ET BANCAIRE"],
@@ -75,12 +75,25 @@ const commNode2Txt = [
 ];
 const commNode2 = new Node("comm2", [1146, 500], commNode2Txt, commColor);
 
+const sqlNode = new Node("sql", [617, 100], null, codeColor, "images/sql-white.svg");
+const phpNode = new Node("php", [717, 100], null, codeColor, "images/php-white.svg");
+const ajaxNode = new Node("ajax", [817, 100], null, codeColor, "images/ajax-white.svg");
 
-var nodes = [badge1, badge2, badge3, creaNode1, creaNode2, codeNode1, codeNode2, commNode1, commNode2];
 
-badge1.getChildren(creaNode1, creaNode2);
-badge2.getChildren(badge1, badge3, codeNode1, codeNode2);
-badge3.getChildren(commNode1, commNode2);
+const html5Node = new Node("html5", [468, 616], null, codeColor, "images/html5-white.svg");
+const css3Node = new Node("css3", [468, 742], null, codeColor, "images/css3-white.svg");
+const pythonNode = new Node("python", [968, 616], null, codeColor, "images/python-white.svg");
+const jsNode = new Node("js", [968, 742], null, codeColor, "images/js-white.svg");
+const gitNode = new Node("git", [717, 923], null, codeColor, "images/git-white.svg");
+
+
+var nodes = [creaBadge, codeBadge, commBadge, creaNode1, creaNode2, codeNode1, codeNode2, commNode1, commNode2, sqlNode, phpNode, ajaxNode, html5Node, css3Node, gitNode, pythonNode, jsNode, gitNode];
+
+creaBadge.getChildren(creaNode1, creaNode2);
+codeBadge.getChildren(creaBadge, commBadge, codeNode1, codeNode2);
+commBadge.getChildren(commNode1, commNode2);
+codeNode1.getChildren(sqlNode, phpNode, ajaxNode);
+codeNode2.getChildren(html5Node, css3Node, jsNode, pythonNode, gitNode);
 
 for (let n of nodes) {
   n.getParents();

@@ -1,11 +1,11 @@
 
 class Node {
-  constructor(id, initialPosition, text=undefined, color=undefined) {
-    console.log('text argument is : ', text);
+  constructor(id, initialPosition, text=undefined, color=undefined, image=undefined) {
     this.id = id;
     // this.domElement = document.getElementById(this.id);
-    this.text = text || this.id;
+    this.text = text || [];
     this.domElement = this.createElements();
+    if (image) this.image = this.getImage(image)
     // console.log("domElement is : ", this.domElement);
     this.initPos = initialPosition;
     this.color = this.getColor(color);
@@ -25,7 +25,6 @@ class Node {
     let nodeElement = document.createElement('div');
     nodeElement.className = 'node';
     nodeElement.id = this.id;
-    console.log("text is : ", this.text);
     
     for (let i of this.text) {
       let para = document.createElement("p");
@@ -52,6 +51,14 @@ class Node {
       + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
     this.domElement.style.backgroundColor = nodeColor;
     return nodeColor;
+  }
+
+  getImage(image) {
+    let img = document.createElement('img');
+    img.src = image;
+    img.className = this.id + "__img";
+    this.domElement.appendChild(img);
+    this.domElement.classList.add("node__image")
   }
 
   getChildren(...targets) {
@@ -165,7 +172,7 @@ class Node {
       } else {
         // parent is left of child and above child
         height = childVMid - parentVMid;
-        arrowDir = (height / width < .15) ? 'right' : 'up';
+        arrowDir = (height / width < .15) ? 'right' : 'down';
         createLinks(parent, child, plug1_posX, plug1_posY, 'top-right');
         createLinks(child, parent, plug2_posX - width/2, plug2_posY - height/2, 'bottom-left');
         if (arrow) createArrow(parent, child,  plug1_posX + width / 2,
@@ -321,7 +328,6 @@ class Badge extends Node {
   }
 
   getColor(color=undefined) {
-    console.log(color);
     let nodeColor = color || 'rgb(' + (Math.floor(Math.random() * 30) + 50)
       + ',' + (Math.floor(Math.random() * 30) + 50)
       + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
