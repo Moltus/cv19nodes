@@ -24,17 +24,17 @@ const commColor = '#5F3270';
 const textBadge1 = " --------- CREA -------- CREA";
 const badge1 = new Badge("crea", [468, 495], textBadge1, creaColor);
 const textBadge2 = " --------- CODE -------- CODE";
-const badge2 = new Badge("code", [718, 495], textBadge2, codeColor);
+const badge2 = new Badge("code", [718, 449], textBadge2, codeColor);
 const textBadge3 = "------- COMM ------ COMM ";
 const badge3 = new Badge("comm", [968, 495], textBadge3, commColor);
 
 const creaNode1Txt = [
   ["• INFOGRAPHISTE 2D/3D freelance 2005-2007, 2011-2018"],
-  [". Multimédia Print / Vidéo. Modélisation 3D (box-modeling), animation 3D (keyframing), Affiches, flyers, cartes de visite, illustration vectorielle, story-boarding."],
+  ["Multimédia Print / Vidéo. Modélisation 3D, animation 3D, Affiches, flyers, cartes de visite, illustration vectorielle, story-boarding."],
   ["• GRAPHIR DESIGN Paris 1998"],
   ["Stage entreprise graphisme spécialisée dans le print."]
 ];
-const creaNode1 = new Node("crea1", [392, 200], creaNode1Txt, creaColor);
+const creaNode1 = new Node("crea1", [353, 192], creaNode1Txt, creaColor);
 
 const creaNode2Txt = [
   ["• SUPINFOCOM Arles 2003-2004"],
@@ -43,13 +43,13 @@ const creaNode2Txt = [
   ["École de multimédia - création numérique"],
   ["• BAC ARTS APPLIQUÉS Paris 1998"]
 ];
-const creaNode2 = new Node("crea2", [392, 620], creaNode2Txt, creaColor);
+const creaNode2 = new Node("crea2", [143, 487], creaNode2Txt, creaColor);
 
 const codeNode1Txt = [
   ["• IFOCOP DÉVELOPPEUR WEB Montigny-le-Bretonneux 2018-2019"],
   ["Formation diplomante bac+3 en alternance. Front-end + Back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."]
 ];
-const codeNode1 = new Node("code1", [642, 310], codeNode1Txt, codeColor);
+const codeNode1 = new Node("code1", [642, 242], codeNode1Txt, codeColor);
 
 const codeNode2Txt = [
   ["• FORMATIONS EN LIGNE UDEMY"],
@@ -59,21 +59,21 @@ const codeNode2Txt = [
   ["\"Learning Pyhton The Hard Way\", Zed Shaw"],
   ["\"Eloquent Javascript\", Marijn Haverbeke"]
 ];
-const codeNode2 = new Node("code2", [642, 620], codeNode2Txt, codeColor);
+const codeNode2 = new Node("code2", [642, 583], codeNode2Txt, codeColor);
 
 const commNode1Txt = [
   ["• \"Zobar\" pièce théâtre de M. Tracke. Théâtre de Ménilmontant Paris 2013-2014"],
   ["• COURS FLORENT Paris 2007-2010"],
   ["Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement."],
 ];
-const commNode1 = new Node("comm1", [892, 280], commNode1Txt, commColor);
+const commNode1 = new Node("comm1", [932, 250], commNode1Txt, commColor);
 
 const commNode2Txt = [
   ["• VENTE ET BANCAIRE"],
   ["Vendeur Printemps textile homme, Célio, Séphora CC Parly2, Le Chesnay 2001 et 2008"],
   ["Saisonnier Société Générale - en bureaux et guichet - Paris et Caen 1998-2000."]
 ];
-const commNode2 = new Node("comm2", [892, 620], commNode2Txt, commColor);
+const commNode2 = new Node("comm2", [1146, 500], commNode2Txt, commColor);
 
 
 var nodes = [badge1, badge2, badge3, creaNode1, creaNode2, codeNode1, codeNode2, commNode1, commNode2];
