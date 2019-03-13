@@ -10,7 +10,7 @@ const optionsBtn = document.getElementById('toggle-options');
 function toggleOptions() {
   options.classList.toggle('active');
   optionsBtn.classList.toggle('active');
-  optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Show Options" : "Hide options";
+  optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Show Options" : "Hide Options";
 }
 
 function randomPositions() {
