@@ -60,6 +60,7 @@ button {
 }
 
 .node {
+  user-select: none;
   position: absolute;
   left: 718px;
   top: 449px;
@@ -90,6 +91,7 @@ button {
 }
 
 .badge {
+  user-select: none;
   position: absolute;
   left: 718px;
   top: 449px;

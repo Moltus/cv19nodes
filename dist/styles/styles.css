@@ -42,6 +42,7 @@ button {
   font-size: .8em; }
 
 .node {
+  user-select: none;
   position: absolute;
   left: 718px;
   top: 449px;
@@ -68,6 +69,7 @@ button {
       height: 70px; }
 
 .badge {
+  user-select: none;
   position: absolute;
   left: 718px;
   top: 449px;

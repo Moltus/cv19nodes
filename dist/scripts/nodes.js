@@ -46,9 +46,9 @@ class Node {
 
   getColor(color=undefined) {
     
-    let nodeColor = color || 'rgb(' + (Math.floor(Math.random() * 30) + 50)
-      + ',' + (Math.floor(Math.random() * 30) + 50)
-      + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
+    let nodeColor = color || 'rgb(' + (Math.floor(Math.random() * 100) + 1)
+      + ',' + (Math.floor(Math.random() * 100) + 1)
+      + ',' + (Math.floor(Math.random() * 100) + 1) + ')';
     this.domElement.style.backgroundColor = nodeColor;
     return nodeColor;
   }
@@ -106,12 +106,12 @@ class Node {
       this.linkParents();
       this.linkChildren();
       n ++;
-      if (n === time / 10) {
+      if (n === time / 50) {
         this.domElement.style.transition = 'none';
         clearInterval(interval);
         this.animation = false;
       }
-    }, 10); 
+    }, 50); 
     
   }
 

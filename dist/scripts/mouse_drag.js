@@ -27,7 +27,7 @@ function dragStart(e) {
 }
 
 function drag(e) {
-  event.preventDefault();
+  e.preventDefault();
   if (isDown) {
     dragTarget.style.left = (e.clientX + offset[0]) + 'px';
     dragTarget.style.top = (e.clientY + offset[1]) + 'px';
