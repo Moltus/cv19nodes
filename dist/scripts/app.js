@@ -24,7 +24,7 @@ const commColor = '#5F3270';
 const creaText = " --------- CREA -------- CREA";
 const creaBadge = new Badge("crea-badge", [468, 495], creaText, creaColor);
 const codeText = " --------- CODE -------- CODE";
-const codeBadge = new Badge("code-badge", [718, 458], codeText, codeColor);
+const codeBadge = new Badge("code-badge", [718, 466], codeText, codeColor);
 const commText = "------- COMM ------ COMM ";
 const commBadge = new Badge("comm-badge", [968, 495], commText, commColor);
 
@@ -72,7 +72,7 @@ const codeNode2Txt = [
   ["\"Learning Pyhton The Hard Way\", Zed Shaw"],
   ["\"Eloquent Javascript\", Marijn Haverbeke"]
 ];
-const codeNode2 = new Node("code2", [642, 583], codeNode2Txt, codeColor);
+const codeNode2 = new Node("code2", [642, 605], codeNode2Txt, codeColor);
 
 const commNode1Txt = [
   ["• \" ZOBAR \" pièce mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014"],
@@ -82,8 +82,8 @@ const commNode1Txt = [
 const commNode1 = new Node("comm1", [932, 235], commNode1Txt, commColor);
 
 const commNode2Txt = [
-  ["• Expression en public • Face caméra • Improvisation "],
-  ["Niveau B2+"]
+  ["• Expression en public •Improvisation • Face caméra"],
+  
 ];
 const commNode2 = new Node("comm2", [1220, 282], commNode2Txt, commColor);
 
@@ -114,11 +114,11 @@ const max3dsNode = new Node("max3ds", [100, 272], null, creaColor, "images/3dsma
 const photoshopNode = new Node("photoshop", [195, 210], null, creaColor, "images/photoshop-white.svg");
 const illustratorNode = new Node("illustrator", [195, 335], null, creaColor, "images/illustrator-white.svg");
 
-const html5Node = new Node("html5", [468, 616], null, codeColor, "images/html5-white.svg");
-const css3Node = new Node("css3", [468, 742], null, codeColor, "images/css3-white.svg");
-const sassNode = new Node("sass", [468, 880], null, codeColor, "images/sass-white.svg");
-const pythonNode = new Node("python", [968, 616], null, codeColor, "images/python-white.svg");
-const jsNode = new Node("js", [968, 742], null, codeColor, "images/js-white.svg");
+const html5Node = new Node("html5", [468, 638], null, codeColor, "images/html5-white.svg");
+const css3Node = new Node("css3", [468, 764], null, codeColor, "images/css3-white.svg");
+const sassNode = new Node("sass", [468, 902], null, codeColor, "images/sass-white.svg");
+const pythonNode = new Node("python", [968, 638], null, codeColor, "images/python-white.svg");
+const jsNode = new Node("js", [968, 764], null, codeColor, "images/js-white.svg");
 const gitNode = new Node("git", [717, 923], null, codeColor, "images/git-white.svg");
 
 
