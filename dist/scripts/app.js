@@ -119,10 +119,11 @@ const css3Node = new Node("css3", [468, 764], null, codeColor, "images/css3-whit
 const sassNode = new Node("sass", [468, 902], null, codeColor, "images/sass-white.svg");
 const pythonNode = new Node("python", [968, 638], null, codeColor, "images/python-white.svg");
 const jsNode = new Node("js", [968, 764], null, codeColor, "images/js-white.svg");
+const gulpNode = new Node("gulp", [968, 902], null, codeColor, "images/gulp-white.svg");
 const gitNode = new Node("git", [717, 923], null, codeColor, "images/git-white.svg");
 
 
-var nodes = [creaBadge, codeBadge, commBadge, creaNode1, creaNode2, creaNode3, creaNode4, codeNode1, codeNode2, commNode1, commNode2, commNode3, commNode4, commNode5, max3dsNode, photoshopNode, illustratorNode, sqlNode, phpNode, ajaxNode, html5Node, css3Node, sassNode, gitNode, pythonNode, jsNode, gitNode];
+var nodes = [creaBadge, codeBadge, commBadge, creaNode1, creaNode2, creaNode3, creaNode4, codeNode1, codeNode2, commNode1, commNode2, commNode3, commNode4, commNode5, max3dsNode, photoshopNode, illustratorNode, sqlNode, phpNode, ajaxNode, html5Node, css3Node, sassNode, gitNode, pythonNode, jsNode, gulpNode, gitNode];
 
 creaBadge.getChildren(creaNode1, creaNode2);
 creaNode1.getChildren(max3dsNode, photoshopNode, illustratorNode);
@@ -135,6 +136,7 @@ commNode4.getChildren(commNode5);
 codeNode1.getChildren(sqlNode, phpNode, ajaxNode);
 codeNode2.getChildren(html5Node, css3Node, jsNode, pythonNode, gitNode);
 css3Node.getChildren(sassNode);
+jsNode.getChildren(gulpNode);
 
 for (let n of nodes) {
   n.getParents();
