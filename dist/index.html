@@ -9,23 +9,35 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <div class="id-header">
+    <h1 class="id-header__year">20<span class="id-header__year--small">19</span></h1>
+    <div class="id-header__info">
+      <p>HTTPS://<strong>BENOITCLEMENT.</strong>FR</p>
+      <p><strong>BENOIT.CLEMENT</strong>@GMAIL.COM</p>
+      <p>06 86 97 33 76</p>
+    </div>
+  </div>
   <div id="wrapper" class="wrapper">
     
   </div>
 
-  <button type="button" class="btn" id="toggle-options">Show options</button>
-  <div id="options" class="options__group">
-    <button type="button" class="btn options__content" id="random-pos">
-      Random positions</button>
-    <button type="button" class="btn options__content" id="random-colors">
-      Random colors</button>
-    <button type="button" class="btn options__content" id="reset-pos">
-      Reset positions</button>
-    <button type="button" class="btn options__content" id="get-coords">
-      get coords</button>
-    <span id="info-coords" class="options__content"></span>
+  <div class="buttons">
+    <div id="options" class="options__group active">
+      <span id="info-coords" class="options__content"></span>
+      <button type="button" class="btn options__content" id="get-coords">
+          get coords</button>
+      <button type="button" class="btn options__content" id="random-pos">
+        Random positions</button>
+      <button type="button" class="btn options__content" id="reset-pos">
+        Reset positions</button>
+      <button type="button" class="btn options__content" id="random-colors">
+        Random colors</button>
+      <button type="button" class="btn options__content" id="reset-colors">
+        Reset colors</button>
+      
+    </div>    
+    <button type="button" class="btn" id="toggle-options">Hide options</button>
   </div>
-
   <script src="scripts/nodes.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/mouse_drag.js"></script>

@@ -2,6 +2,7 @@ document.getElementById("toggle-options").addEventListener('click', toggleOption
 document.getElementById("random-pos").addEventListener('click', randomPositions);
 document.getElementById("random-colors").addEventListener('click', randomColors);
 document.getElementById("reset-pos").addEventListener('click', resetPositions);
+document.getElementById("reset-colors").addEventListener('click', resetColors);
 document.getElementById("get-coords").addEventListener('click', getNodesCoords);
 
 const options = document.getElementById('options');
@@ -9,7 +10,7 @@ const optionsBtn = document.getElementById('toggle-options');
 function toggleOptions() {
   options.classList.toggle('active');
   optionsBtn.classList.toggle('active');
-  optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Hide Options" : "Show options";
+  optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Show Options" : "Hide options";
 }
 
 function randomPositions() {
@@ -31,6 +32,14 @@ function resetPositions() {
   for (let n of nodes) {
     if (n.animation) return;
     n.move(...n.initPos);
+  }
+}
+
+function resetColors() {
+  console.log("reset colors");
+  for (let n of nodes) {
+    if (n.animation) return;
+    n.getColor(n.initColor);
   }
 }
 

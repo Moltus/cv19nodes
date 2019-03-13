@@ -7,6 +7,7 @@ body {
     padding: 0;
     background-color: #2a2a2a;
     background-image: url(../images/bg.svg);
+    background-size: 40px 40px;
     font-family: 'Roboto', sans-serif;
     /* position: relative; /* for touch devices navigation */
     overflow: hidden;
@@ -21,24 +22,68 @@ p {
   }
 }
 
+.id-header {
+  position: absolute;
+  top: -6px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 100;
+
+  &__info {
+    font-size: .8rem;
+    font-weight: 300;
+    display: inline-block;
+  }
+
+  & strong {
+    font-weight: 300;
+  }
+  &__year {
+    display: inline-block;
+    color: $creaColor;
+    margin: 0;
+    padding: 0;
+    font-size: 5.2rem;
+    font-weight: 300;
+    position: relative;
+    top: 0;
+
+    &--small {
+      font-weight: 100;
+      position: absolute;
+      top: 1.6rem;
+      left: 1.6rem;
+      color: #fff;
+      font-size: 2.5rem;
+    }
+  }
+}
+
 .container {
   position: relative;
 }
 
+.buttons {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  
+}
 
 button {
-  background-color: #555;
+  background-color: $creaColor;
   color: #fff;
   text-decoration: none;
   padding: .2rem .5rem;
   display: inline-block;
   transition: all 500ms;
-  border: 2px solid #555;
+  border: 2px solid $creaColor;
 
   &:hover {
   background-color: #fff;
-  border: 2px solid #555;
-  color: #555;
+  border: 2px solid $creaColor;
+  color: $creaColor;
   }
 }
 

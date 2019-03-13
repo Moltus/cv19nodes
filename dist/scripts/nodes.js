@@ -1,6 +1,6 @@
 
 class Node {
-  constructor(id, initialPosition, text=undefined, color=undefined, image=undefined) {
+  constructor(id, initialPosition, text=undefined, initialColor=undefined, image=undefined) {
     this.id = id;
     // this.domElement = document.getElementById(this.id);
     this.text = text || [];
@@ -8,7 +8,7 @@ class Node {
     if (image) this.image = this.getImage(image)
     // console.log("domElement is : ", this.domElement);
     this.initPos = initialPosition;
-    this.color = this.getColor(color);
+    this.initColor = this.getColor(initialColor);
     this.type = 'node';
     this.domConnections = document.getElementById((this.id + '__connections'));
     this.children = [];
