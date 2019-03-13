@@ -85,7 +85,7 @@ const commNode2Txt = [
   ["• Expression en public •Improvisation • Face caméra"],
   
 ];
-const commNode2 = new Node("comm2", [1220, 282], commNode2Txt, commColor);
+const commNode2 = new Node("comm2", [1220, 296], commNode2Txt, commColor);
 
 const commNode3Txt = [
   ["• ANGLAIS LU ET PARLÉ"],
