@@ -60,7 +60,7 @@ const creaNode4 = new Node("crea4", [120, 937], creaNode4Txt, creaColor);
 
 const codeNode1Txt = [
   ["---- IFOCOP DÉVELOPPEUR WEB ----"],
-  ["Montigny-le-Bretonneux 2018-2019. Formation diplomante bac+3 en alternance. Front-end + Back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."]
+  ["Montigny-le-Bretonneux 2018-2019. Formation diplomante bac+3 en alternance. Front-end + back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."]
 ];
 const codeNode1 = new Node("code1", [642, 262], codeNode1Txt, codeColor);
 
