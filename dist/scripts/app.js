@@ -29,27 +29,27 @@ const commText = "------- COMM ------ COMM ";
 const commBadge = new Badge("comm-badge", [968, 495], commText, commColor);
 
 const creaNode1Txt = [
-  ["-------- INFOGRAPHISTE 2D/3D ------- "],
+  ["-------- INFOGRAPHISTE 2D/3D ------ "],
   ["Freelance 2005-2007, 2011-2018. Multimédia Print / Vidéo. Modélisation 3D, animation 3D, Affiches, flyers, cartes de visite, illustration vectorielle."],
-  ["------------- GRAPHIR DESIGN ------------"],
-  ["Stage entreprise graphisme spécialisée dans le print. Paris 1998"]
+  ["------------ GRAPHIR DESIGN -----------"],
+  ["Stage entreprise graphisme spécialisée \"print\". Paris 1998."]
 ];
 const creaNode1 = new Node("crea1", [353, 210], creaNode1Txt, creaColor);
 
 const creaNode2Txt = [
-  ["---------- SUPINFOCOM ARLES ---------"],
+  ["--------- SUPINFOCOM ARLES ---------"],
   ["Aujourd'hui Ecole MOPA - Ecole du film d'animation et de l'image de synthèse. 2003-2004."],
-  ["------------- E-ART SUP PARIS ------------"],
+  ["------------ E-ART SUP PARIS -----------"],
   ["École de multimédia - création numérique. 2001-2003."],
-  ["----- BAC ARTS APPLIQUÉS 1998 ----"]
+  ["----- BAC ARTS APPLIQUÉS 1998 ---"]
 ];
 const creaNode2 = new Node("crea2", [120, 487], creaNode2Txt, creaColor);
 
 const creaNode3Txt = [
-  ["------------- Arts traditionnels -------------"],
+  ["------------ Arts traditionnels ------------"],
   ["Dessin, peinture, sculpture, photographie. "],
-  ["------------- Arts numériques --------------"],
-  ["Digital painting/sculpting"]
+  ["------------ Arts numériques -------------"],
+  ["Digital painting/sculpting."]
 ];
 const creaNode3 = new Node("crea3", [120, 747], creaNode3Txt, creaColor);
 
@@ -59,45 +59,44 @@ const creaNode4Txt = [
 const creaNode4 = new Node("crea4", [120, 937], creaNode4Txt, creaColor);
 
 const codeNode1Txt = [
-  ["---- IFOCOP DÉVELOPPEUR WEB ----"],
-  ["Montigny-le-Bretonneux 2018-2019. Formation diplomante bac+3 en alternance. Front-end + Back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."]
+  ["---- IFOCOP DÉVELOPPEUR WEB ---"],
+  ["Montigny-le-Bretonneux 2018-2019. Formation diplomante bac+3 en alternance. Front-end + back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."]
 ];
 const codeNode1 = new Node("code1", [642, 262], codeNode1Txt, codeColor);
 
 const codeNode2Txt = [
-  ["-- FORMATIONS EN LIGNE UDEMY -"],
+  ["- FORMATIONS EN LIGNE UDEMY -"],
   ["\"Git a Web Developer Job: Mastering the Modern Workflow\", Brad Schiff."],
   ["\"The Complete JavaScript Course\", Jonas Schmedtmann."],
-  ["------ LIVRES PROGRAMMATION -----"],
-  ["\"Learning Pyhton The Hard Way\", Zed Shaw"],
-  ["\"Eloquent Javascript\", Marijn Haverbeke"]
+  ["----- LIVRES PROGRAMMATION -----"],
+  ["\"Learning Pyhton The Hard Way\", Zed Shaw."],
+  ["\"Eloquent Javascript\", Marijn Haverbeke."]
 ];
 const codeNode2 = new Node("code2", [642, 605], codeNode2Txt, codeColor);
 
 const commNode1Txt = [
-  [" -------- PIÈCE THÉÂTRE ZOBAR --------"],
-  ["commédien. mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014"],
-  ["------------- COURS FLORENT -------------"],
-  ["Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement. Paris 2007-2010"],
+  [" -------- PIÈCE THÉÂTRE ZOBAR -------"],
+  ["Comédien. mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014."],
+  ["------------ COURS FLORENT -----------"],
+  ["Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement. Paris 2007-2010."],
 ];
-const commNode1 = new Node("comm1", [932, 235], commNode1Txt, commColor);
+const commNode1 = new Node("comm1", [932, 226], commNode1Txt, commColor);
 
 const commNode2Txt = [
   ["• Expression en public"],
   ["• Improvisation • Face caméra"]
-  
 ];
-const commNode2 = new Node("comm2", [1220, 296], commNode2Txt, commColor);
+const commNode2 = new Node("comm2", [1220, 287], commNode2Txt, commColor);
 
 const commNode3Txt = [
   ["• ANGLAIS LU ET PARLÉ. (niv. B2+)"],
-  ["language technique et conversation"]
+  ["language technique / conversation."]
 ];
 const commNode3 = new Node("comm3", [1167, 502], commNode3Txt, commColor);
 
 const commNode4Txt = [
-  ["---------- VENTE ET BANCAIRE ----------"],
-  ["Vendeur Printemps textile homme, Célio, Séphora CC Parly2, Le Chesnay 2001 et 2008"],
+  ["--------- VENTE ET BANCAIRE ---------"],
+  ["Vendeur Printemps textile homme, Célio, Séphora CC Parly2, Le Chesnay 2001 et 2008."],
   ["Saisonnier Société Générale - en bureaux et guichet - Paris et Caen 1998-2000."]
 ];
 const commNode4 = new Node("comm4", [1167, 632], commNode4Txt, commColor);

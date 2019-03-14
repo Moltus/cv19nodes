@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #2a2a2a;
   background-image: url(../images/bg.svg);
-  background-size: 40px 40px;
+  background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   /* position: relative; /* for touch devices navigation */
   overflow: hidden; }
@@ -16,7 +16,7 @@ p {
 
 .id-header {
   position: absolute;
-  top: -6px;
+  top: 10px;
   left: 10px;
   margin: 0;
   padding: 0;
@@ -56,11 +56,21 @@ p {
       left: 1rem;
       color: #fff;
       font-size: 1.5rem; }
+  .id-header h3 {
+    position: relative;
+    left: 590px; }
+    .id-header h3 span {
+      font-size: .8rem;
+      font-weight: 300;
+      letter-spacing: .15rem;
+      top: 43px;
+      left: 39px; }
 
 .container {
   position: relative; }
 
 .buttons {
+  display: none;
   position: absolute;
   top: 14px;
   right: 0;
