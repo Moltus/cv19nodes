@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 $creaColor: #6D314F;
 $codeColor: #3B3B78;
 $commColor: #5F3270;
@@ -34,11 +36,11 @@ p {
   &__info {
 
     &>p{
-      letter-spacing: .15rem;
+      letter-spacing: .19rem;
     }
 
     & p:first-child {
-      letter-spacing: .19rem;
+      letter-spacing: .1rem;
     }
     
     font-size: .8rem;
@@ -82,7 +84,7 @@ p {
   & h3 {
     display: none;
     position: relative;
-    left: 590px;
+    left: 608px;
 
     & span {
       font-size: .8rem;

@@ -1,3 +1,4 @@
+@import url(normalize.css);
 body {
   margin: 0;
   padding: 0;
@@ -27,9 +28,9 @@ p {
     font-weight: 300;
     display: inline-block; }
     .id-header__info > p {
-      letter-spacing: .15rem; }
-    .id-header__info p:first-child {
       letter-spacing: .19rem; }
+    .id-header__info p:first-child {
+      letter-spacing: .1rem; }
   .id-header strong {
     font-weight: 300; }
   .id-header__big {
@@ -59,7 +60,7 @@ p {
   .id-header h3 {
     display: none;
     position: relative;
-    left: 590px; }
+    left: 608px; }
     .id-header h3 span {
       font-size: .8rem;
       font-weight: 300;
