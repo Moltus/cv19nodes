@@ -80,6 +80,7 @@ p {
     }
   }
   & h3 {
+    display: none;
     position: relative;
     left: 590px;
 
@@ -99,9 +100,8 @@ p {
 }
 
 .buttons {
-  display: none;
   position: absolute;
-  top: 14px;
+  top: 30px;
   right: 0;
   font-size: .8rem;
   font-weight: 300;
