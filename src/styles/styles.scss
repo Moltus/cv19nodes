@@ -35,10 +35,14 @@ p {
   &__info {
 
     &>p{
-      letter-spacing: .19rem;
+      letter-spacing: .225rem;
     }
 
     & p:first-child {
+      letter-spacing: .13rem;
+    }
+
+    & p:last-child {
       letter-spacing: .1rem;
     }
     

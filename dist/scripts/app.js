@@ -69,7 +69,7 @@ const codeNode2Txt = [
   ["\"Git a Web Developer Job: Mastering the Modern Workflow\", Brad Schiff."],
   ["\"The Complete JavaScript Course\", Jonas Schmedtmann."],
   ["----- LIVRES PROGRAMMATION -----"],
-  ["\"Learning Pyhton The Hard Way\", Zed Shaw."],
+  ["\"Learning Python The Hard Way\", Zed Shaw."],
   ["\"Eloquent Javascript\", Marijn Haverbeke."]
 ];
 const codeNode2 = new Node("code2", [642, 605], codeNode2Txt, codeColor);

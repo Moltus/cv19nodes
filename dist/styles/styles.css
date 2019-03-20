@@ -27,8 +27,10 @@ p {
     font-weight: 300;
     display: inline-block; }
     .id-header__info > p {
-      letter-spacing: .19rem; }
+      letter-spacing: .225rem; }
     .id-header__info p:first-child {
+      letter-spacing: .13rem; }
+    .id-header__info p:last-child {
       letter-spacing: .1rem; }
   .id-header strong {
     font-weight: 300; }

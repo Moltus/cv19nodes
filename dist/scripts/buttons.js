@@ -10,14 +10,14 @@ const optionsBtn = document.getElementById('toggle-options');
 function toggleOptions() {
   options.classList.toggle('active');
   optionsBtn.classList.toggle('active');
-  optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Show Options" : "Hide Options";
+  optionsBtn.textContent = optionsBtn.classList.contains('active') ? "Afficher Options" : "Masquer Options";
 }
 
 function randomPositions() {
   for (let n of nodes) {
     if (n.animation) return;
-    rndX = Math.floor(Math.random() * 75) + 1;
-    rndY = Math.floor(Math.random() * 60) + 10;
+    rndX = Math.floor(Math.random() * 80) + 1;
+    rndY = Math.floor(Math.random() * 70) + 10;
     n.move(rndX, rndY, 'vw');
   }
 }
