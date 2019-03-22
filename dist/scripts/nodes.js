@@ -115,8 +115,17 @@ class Node {
     
   }
 
-  getCoords() {
-    return [this.domElement.getBoundingClientRect().left, this.domElement.getBoundingClientRect().top];
+  getCoords(unit='px') {
+    let posX = this.domElement.getBoundingClientRect().left;
+    let posY = this.domElement.getBoundingClientRect().top;
+    // output info depending unit argument (px or vw+vh)
+    if (unit == 'px') {
+      return [posX, posY];
+    } else if (unit == 'viewport') {
+      return [posX * 100 / document.documentElement.clientWidth, // unit = vw
+              posY * 100 / document.documentElement.clientHeight]; // unit = vh
+    }
+    
   }
 
   linkChild(child) {

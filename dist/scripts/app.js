@@ -144,3 +144,5 @@ for (let n of nodes) {
   n.linkChildren();
   n.move(...n.initPos);
 }
+
+const nodesInfo = [];

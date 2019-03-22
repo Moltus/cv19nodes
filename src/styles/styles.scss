@@ -150,9 +150,13 @@ button {
   position: absolute;
   left: 718px;
   top: 449px;
+  // left: 50vw;
+  // top : 50vh;
+  // padding: 1vmax 1.33vmax;
+  // width: 7.635vmax;
+  padding: 15px 20px;
   z-index: 10;
   margin: 0;
-  padding: 15px 20px;
   cursor: pointer;
   font-size: .8rem;
   font-weight: 300;
