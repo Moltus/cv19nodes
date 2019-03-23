@@ -157,18 +157,20 @@ function saveNodeInfo(destination, ...nodes) {
     obj.text = n.text;
     obj.color = n.domElement.style.backgroundColor;
     obj.image = (n.image) ? n.image.getAttribute("src") : undefined;
+    obj.children = n.children.map(i => i.id);
     destination.push(obj)
   }
 }
+console.log(nodesInfo1);
 saveNodeInfo(nodesInfo1, ...nodes);
 
-// const nodesInfo1Json = JSON.stringify(nodesInfo1);
+const nodesInfo1Json = JSON.stringify(nodesInfo1);
 
-// function download(content, fileName, contentType) {
-//   var a = document.createElement("a");
-//   var file = new Blob([content], {type: contentType});
-//   a.href = URL.createObjectURL(file);
-//   a.download = fileName;
-//   a.click();
-// }
+function download(content, fileName, contentType) {
+  var a = document.createElement("a");
+  var file = new Blob([content], {type: contentType});
+  a.href = URL.createObjectURL(file);
+  a.download = fileName;
+  a.click();
+}
 // download(nodesInfo1Json, 'nodesInfo1.json', 'text/plain');
