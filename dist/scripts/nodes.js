@@ -58,7 +58,8 @@ class Node {
     img.src = image;
     img.className = this.id + "__img";
     this.domElement.appendChild(img);
-    this.domElement.classList.add("node__image")
+    this.domElement.classList.add("node__image");
+    return img;
   }
 
   getChildren(...targets) {

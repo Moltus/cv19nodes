@@ -145,13 +145,30 @@ for (let n of nodes) {
   n.move(...n.initPos);
 }
 
-const nodesInfo = [];
+const nodesInfo1 = [];
 
-function saveNodeInfo(...nodes) {
+function saveNodeInfo(destination, ...nodes) {
+  console.log(nodes);
+  console.log(nodes[1].getCoords(unit="vwvh"));
   for (let n of nodes) {
     let obj = {};
-    obj.id = node.id;
-    obj.posVWVH = node.getCoords(unit="vwvh");
-    nodesInfo.push()
+    obj.id = n.id;
+    obj.posVWVH = n.getCoords(unit="vwvh");
+    obj.text = n.text;
+    obj.color = n.domElement.style.backgroundColor;
+    obj.image = (n.image) ? n.image.getAttribute("src") : undefined;
+    destination.push(obj)
   }
 }
+saveNodeInfo(nodesInfo1, ...nodes);
+
+// const nodesInfo1Json = JSON.stringify(nodesInfo1);
+
+// function download(content, fileName, contentType) {
+//   var a = document.createElement("a");
+//   var file = new Blob([content], {type: contentType});
+//   a.href = URL.createObjectURL(file);
+//   a.download = fileName;
+//   a.click();
+// }
+// download(nodesInfo1Json, 'nodesInfo1.json', 'text/plain');
