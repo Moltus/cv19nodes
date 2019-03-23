@@ -18,7 +18,7 @@ function randomPositions() {
     if (n.animation) return;
     rndX = Math.floor(Math.random() * 80) + 1;
     rndY = Math.floor(Math.random() * 70) + 10;
-    n.move(rndX, rndY, 'vw');
+    n.move(rndX, rndY, 'vwvh');
   }
 }
 
@@ -47,7 +47,7 @@ const infoCoords = document.getElementById('info-coords');
 function getNodesCoords() {
   let infoText = '';
   if (targetNodeObj) {
-    let coords = targetNodeObj.getCoords('viewport').map(a => a.toFixed(2));
+    let coords = targetNodeObj.getCoords('vwvh').map(a => a.toFixed(2));
     infoText = ` ${targetNodeObj.id}  x: ${coords[0]} vw, y: ${coords[1]} vh `;
   } else infoText = "click on a node to get coordinates";
   infoCoords.textContent = infoText;

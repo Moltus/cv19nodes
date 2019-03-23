@@ -89,15 +89,20 @@ class Node {
     for (let parent of this.parents) parent.linkChild(this);
   }
 
-  move(x, y, suffix='px', time=1000) {
+  move(x, y, unit='px', time=1000) {
     // manual animated movement for nodes
     // this temporarily disables drag and drop movement
     // default transition is 1sec
+
+    let suffix;
+    if (unit == 'px') suffix = ['px', 'px'];
+    else if (unit == 'vwvh') suffix = ['vw', 'vh'];
+    else console.log("unit chosen for coordinates must be 'px' or 'vwvh'");
+    // let suffix = (unit == 'px') ? ['px', 'px'] : ['vw', 'vh'];
     this.animation = true;
     this.domElement.style.transition = 'all ' + time + 'ms';
-    this.domElement.style.left = x + suffix;
-    if (suffix === 'vw') suffix = 'vh';
-    this.domElement.style.top = y + suffix;
+    this.domElement.style.left = x + suffix[0];
+    this.domElement.style.top = y + suffix[1];
     this.deleteLinks();
 
     let n = 0;
@@ -121,10 +126,10 @@ class Node {
     // output info depending unit argument (px or vw+vh)
     if (unit == 'px') {
       return [posX, posY];
-    } else if (unit == 'viewport') {
+    } else if (unit == 'vwvh') {
       return [posX * 100 / document.documentElement.clientWidth, // unit = vw
               posY * 100 / document.documentElement.clientHeight]; // unit = vh
-    }
+    } else console.log("unit chosen for coordinates must be 'px' or 'vwvh'")
     
   }
 

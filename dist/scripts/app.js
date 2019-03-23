@@ -146,3 +146,12 @@ for (let n of nodes) {
 }
 
 const nodesInfo = [];
+
+function saveNodeInfo(...nodes) {
+  for (let n of nodes) {
+    let obj = {};
+    obj.id = node.id;
+    obj.posVWVH = node.getCoords(unit="vwvh");
+    nodesInfo.push()
+  }
+}
