@@ -1,25 +1,31 @@
+const creaColor = '#6D314F';
+const codeColor = '#3B3B78';
+const commColor = '#5F3270';
+
 const cv2019v1Layout = [
   {
+    type: "badge",
     id: "crea-badge",
     posVWVH: [
       50.59901338971106,
       46.917450365726225
     ],
     text: " --------- CREA -------- CREA",
-    color: "",
+    color: "rgb(109, 49, 79)",
     children: [
       "crea1",
       "crea2"
     ]
   },
   {
+    type: "badge",
     id: "code-badge",
     posVWVH: [
       50.59901338971106,
       46.917450365726225
     ],
     text: " --------- CODE -------- CODE",
-    color: "",
+    color: "rgb(59, 59, 120)",
     children: [
       "crea-badge",
       "comm-badge",
@@ -28,13 +34,14 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "badge",
     id: "comm-badge",
     posVWVH: [
       50.59901338971106,
       46.917450365726225
     ],
     text: "------- COMM ------ COMM ",
-    color: "",
+    color: "rgb(95, 50, 112)",
     children: [
       "comm1",
       "comm3",
@@ -42,6 +49,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "crea1",
     posVWVH: [
       50.59901338971106,
@@ -69,6 +77,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "crea2",
     posVWVH: [
       50.59901338971106,
@@ -97,6 +106,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "crea3",
     posVWVH: [
       50.59901338971106,
@@ -122,6 +132,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "crea4",
     posVWVH: [
       50.59901338971106,
@@ -136,6 +147,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "code1",
     posVWVH: [
       50.59901338971106,
@@ -157,6 +169,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "code2",
     posVWVH: [
       50.59901338971106,
@@ -192,6 +205,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "comm1",
     posVWVH: [
       50.59901338971106,
@@ -217,6 +231,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "comm2",
     posVWVH: [
       50.59901338971106,
@@ -234,6 +249,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "comm3",
     posVWVH: [
       50.59901338971106,
@@ -251,6 +267,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "comm4",
     posVWVH: [
       50.59901338971106,
@@ -273,6 +290,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "comm5",
     posVWVH: [
       50.59901338971106,
@@ -290,6 +308,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "max3ds",
     posVWVH: [
       50.59901338971106,
@@ -301,6 +320,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "photoshop",
     posVWVH: [
       50.59901338971106,
@@ -312,6 +332,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "illustrator",
     posVWVH: [
       50.59901338971106,
@@ -323,6 +344,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "sql",
     posVWVH: [
       50.59901338971106,
@@ -334,6 +356,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "php",
     posVWVH: [
       50.59901338971106,
@@ -345,6 +368,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "ajax",
     posVWVH: [
       50.59901338971106,
@@ -356,6 +380,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "html5",
     posVWVH: [
       50.59901338971106,
@@ -367,6 +392,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "css3",
     posVWVH: [
       50.59901338971106,
@@ -380,6 +406,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "sass",
     posVWVH: [
       50.59901338971106,
@@ -391,6 +418,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "git",
     posVWVH: [
       50.59901338971106,
@@ -402,6 +430,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "python",
     posVWVH: [
       50.59901338971106,
@@ -413,6 +442,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "js",
     posVWVH: [
       50.59901338971106,
@@ -426,6 +456,7 @@ const cv2019v1Layout = [
     ]
   },
   {
+    type: "node",
     id: "gulp",
     posVWVH: [
       50.59901338971106,
@@ -437,6 +468,7 @@ const cv2019v1Layout = [
     children: []
   },
   {
+    type: "node",
     id: "git",
     posVWVH: [
       50.59901338971106,

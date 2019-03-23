@@ -1,8 +1,8 @@
 document.getElementById("toggle-options").addEventListener('click', toggleOptions);
 document.getElementById("random-pos").addEventListener('click', randomPositions);
 document.getElementById("random-colors").addEventListener('click', randomColors);
-document.getElementById("reset-pos").addEventListener('click', resetPositions);
-document.getElementById("reset-colors").addEventListener('click', resetColors);
+// document.getElementById("reset-pos").addEventListener('click', resetPositions);
+// document.getElementById("reset-colors").addEventListener('click', resetColors);
 document.getElementById("get-coords").addEventListener('click', getNodesCoords);
 
 const options = document.getElementById('options');
@@ -18,7 +18,7 @@ function randomPositions() {
     if (n.animation) return;
     rndX = Math.floor(Math.random() * 80) + 1;
     rndY = Math.floor(Math.random() * 70) + 10;
-    n.move(rndX, rndY, 'vwvh');
+    n.move([rndX, rndY], 'vwvh');
   }
 }
 
@@ -28,19 +28,23 @@ function randomColors() {
   }
 }
 
-function resetPositions() {
-  for (let n of nodes) {
-    if (n.animation) return;
-    n.move(...n.initPos);
-  }
-}
+// function resetPositions() {
+//   for (let n of nodes) {
+//     if (n.animation) return;
+//     n.move(...n.initPos);
+//   }
+// }
 
-function resetColors() {
-  console.log("reset colors");
-  for (let n of nodes) {
-    if (n.animation) return;
-    n.getColor(n.initColor);
-  }
+// function resetColors() {
+//   console.log("reset colors");
+//   for (let n of nodes) {
+//     if (n.animation) return;
+//     n.getColor(n.initColor);
+//   }
+// }
+
+function resetNodes() {
+  
 }
 
 const infoCoords = document.getElementById('info-coords');
