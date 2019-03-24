@@ -87,17 +87,24 @@ p {
       font-size: 1.5rem;
     }
   }
+  // for pdf printing only hidden by default
   & h3 {
-    display: none;
+    display: inline-block;
     position: relative;
-    left: 608px;
+    left: 570px;
+    // top: 43px;
+
+    & img {
+      height: 60px;
+      margin-right: 10px;
+    }
 
     & span {
       font-size: .8rem;
       font-weight: 300;
       letter-spacing: .15rem;
       top: 43px;
-      left: 39px;
+      left: 95px;
     }
   }
   
@@ -120,7 +127,8 @@ button {
   color: #fff;
   text-decoration: none;
   padding: .2rem .5rem;
-  display: inline-block;
+  // display: inline-block;
+  display: none; // for pdf printing only
   transition: all 500ms;
   border: 2px solid $creaColor;
 

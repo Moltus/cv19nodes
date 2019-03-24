@@ -156,7 +156,7 @@ const cv2019v2Layout = [
     text: [
       " -------- PIÈCE THÉÂTRE ZOBAR -------",
       "Comédien. mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014.",
-      " ---------- COURTS-MÉTRAGES ---------",
+      " --------- COURTS-MÉTRAGES ---------",
       "Acteur au sein de différents courts-métrages. 2010-2012"
     ],
     color: "#5F3270",
@@ -170,7 +170,7 @@ const cv2019v2Layout = [
     type: "node",
     id: "comm2",
     posXY: [
-      1271,
+      1253,
       285
     ],
     text: [
@@ -217,7 +217,7 @@ const cv2019v2Layout = [
     type: "node",
     id: "comm5",
     posXY: [
-      1273,
+      1253,
       392
     ],
     text: [
