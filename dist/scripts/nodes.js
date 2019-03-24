@@ -1,16 +1,21 @@
 
 class Node {
-  constructor(id, initialPosition, text=undefined, initialColor=undefined, image=undefined) {
+  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, children) {
+    console.log(arguments);
+    console.log("childrenIds is : ", children);
     this.id = id;
     // this.domElement = document.getElementById(this.id);
     this.text = text || [];
     this.domElement = this.createElements();
-    if (image) this.image = this.getImage(image)
+    this.image = image;
+    if (image) this.getImage(image)
     // console.log("domElement is : ", this.domElement);
-    this.initPos = initialPosition;
-    this.initColor = this.getColor(initialColor);
+    this.posXY = posVWVH;
+    this.color = color;
+    this.getColor(this.color);
     this.type = 'node';
     this.domConnections = document.getElementById((this.id + '__connections'));
+    this.childrenIds = children;
     this.children = [];
     this.parents = [];
     this.bbox = this.domElement.getBoundingClientRect();
@@ -50,7 +55,7 @@ class Node {
       + ',' + (Math.floor(Math.random() * 100) + 1)
       + ',' + (Math.floor(Math.random() * 100) + 1) + ')';
     this.domElement.style.backgroundColor = nodeColor;
-    return nodeColor;
+    this.color = nodeColor;
   }
 
   getImage(image) {
@@ -58,14 +63,21 @@ class Node {
     img.src = image;
     img.className = this.id + "__img";
     this.domElement.appendChild(img);
-    this.domElement.classList.add("node__image")
+    this.domElement.classList.add("node__image");
+    this.image = img;
   }
 
-  getChildren(...targets) {
+  getChildren() {
     // method for adding children to the node.children property
-    for (let i of targets) {
-      this.children.push(i); 
+
+    for (let i of this.childrenIds) {
+      for (let n of nodes) {
+        if (n.id == i) {
+          this.children.push(n);
+        }
+      }
     }
+
   }
 
   getParents() {
@@ -89,7 +101,7 @@ class Node {
     for (let parent of this.parents) parent.linkChild(this);
   }
 
-  move(x, y, unit='px', time=1000) {
+  move(posXY, unit='vwvh', time=1000) {
     // manual animated movement for nodes
     // this temporarily disables drag and drop movement
     // default transition is 1sec
@@ -101,8 +113,8 @@ class Node {
     // let suffix = (unit == 'px') ? ['px', 'px'] : ['vw', 'vh'];
     this.animation = true;
     this.domElement.style.transition = 'all ' + time + 'ms';
-    this.domElement.style.left = x + suffix[0];
-    this.domElement.style.top = y + suffix[1];
+    this.domElement.style.left = posXY[0] + suffix[0];
+    this.domElement.style.top = posXY[1] + suffix[1];
     this.deleteLinks();
 
     let n = 0;
@@ -117,7 +129,7 @@ class Node {
         this.animation = false;
       }
     }, 50); 
-    
+    // this.posXY = posXY;
   }
 
   getCoords(unit='px') {
@@ -125,12 +137,11 @@ class Node {
     let posY = this.domElement.getBoundingClientRect().top;
     // output info depending unit argument (px or vw+vh)
     if (unit == 'px') {
-      return [posX, posY];
+      return [Math.round(posX * 100) / 100, Math.round(posY * 100) / 100];
     } else if (unit == 'vwvh') {
-      return [posX * 100 / document.documentElement.clientWidth, // unit = vw
-              posY * 100 / document.documentElement.clientHeight]; // unit = vh
-    } else console.log("unit chosen for coordinates must be 'px' or 'vwvh'")
-    
+      return [Math.round((posX * 100 / document.documentElement.clientWidth) * 100) / 100, // unit = vw
+        Math.round((posY * 100 / document.documentElement.clientHeight) * 100) / 100]; // unit = vh
+    } else console.log("unit chosen for coordinates must be 'px' or 'vwvh'")   
   }
 
   linkChild(child) {
@@ -158,7 +169,7 @@ class Node {
       var centerPlug2_posY = childVMid;
     }
     
-    // declare width (X distance between plug 1 and 2)
+    // declare width (posXY[0] distance between plug 1 and 2)
     // declare height (Y distance between plug 1 and 2)
     // declare arrow direction (from parent to child or child to parent)
     let width;
@@ -336,8 +347,8 @@ class Node {
 }
 
 class Badge extends Node {
-  constructor(id, initialPosition, text=undefined, color=undefined) {
-    super(id, initialPosition, text, color);
+  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, children=undefined) {
+    super(id, posVWVH, text, color, image, children);
     this.type = 'badge';
   }
 
@@ -347,7 +358,7 @@ class Badge extends Node {
       + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
     let bg = document.getElementById(this.id + '__bg');
     bg.style.fill = nodeColor;
-    return nodeColor;
+    this.color = nodeColor;
   }
 
   createElements() {
