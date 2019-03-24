@@ -13,8 +13,8 @@ const cv2019v1Layout = [
     text: " --------- CREA -------- CREA",
     color: "rgb(109, 49, 79)",
     children: [
-      "crea1",
-      "crea2"
+      ["crea1"],
+      ["crea2"]
     ]
   },
   {

@@ -1,6 +1,6 @@
 
 class Node {
-  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, children) {
+  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, childrenIds=undefined) {
     this.id = id;
     // this.domElement = document.getElementById(this.id);
     this.text = text || [];
@@ -13,7 +13,7 @@ class Node {
     this.getColor(this.color);
     this.type = 'node';
     this.domConnections = document.getElementById((this.id + '__connections'));
-    this.childrenIds = children;
+    this.childrenIds = childrenIds;
     this.children = [];
     this.parents = [];
     this.bbox = this.domElement.getBoundingClientRect();

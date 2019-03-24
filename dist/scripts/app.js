@@ -144,7 +144,7 @@ const nodes = [];
 for (let i of cv2019v1Layout) {
   if (i.type == "badge") {
     console.log(i.children);
-    const node = new Badge(i.id, i.posVWVH, i.text, i.color, i.image || null, i.children);
+    const node = new Badge(i.id, i.posVWVH, i.text, i.color, i.image || null, childrenIds = i.children);
     nodes.push(node);
   } else if (i.type == "node") {
     const node = new Node(i.id, i.posVWVH, i.text, i.color, i.image || null, i.children);
