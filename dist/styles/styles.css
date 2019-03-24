@@ -110,9 +110,9 @@ button {
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  left: 50vh;
+  left: 50vw;
   top: 50vh;
-  padding: 1.39vh 1.31vw;
+  padding: 1.9vmin 1.9vmin;
   z-index: 10;
   margin: 0;
   cursor: pointer;
@@ -122,7 +122,7 @@ button {
   color: #fff;
   width: 13.1vw;
   border: 1px solid #fff;
-  border-radius: 20px;
+  border-radius: 2vmin;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
   .node__image {
     width: 5.89vw;
