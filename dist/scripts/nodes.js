@@ -1,6 +1,7 @@
 
 class Node {
   constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, childrenIds=undefined) {
+    console.log(arguments);
     this.id = id;
     // this.domElement = document.getElementById(this.id);
     this.text = text || [];
