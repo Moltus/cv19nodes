@@ -110,29 +110,29 @@ button {
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  left: 718px;
-  top: 449px;
-  padding: 15px 20px;
+  left: 50vh;
+  top: 50vh;
+  padding: 1.39vh 1.31vw;
   z-index: 10;
   margin: 0;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: .84vw;
   font-weight: 300;
-  line-height: 1.1rem;
+  line-height: 1.15vw;
   color: #fff;
-  width: 200px;
+  width: 13.1vw;
   border: 1px solid #fff;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
   .node__image {
-    width: 90px;
-    height: 90px;
+    width: 5.89vw;
+    height: 5.89vw;
     padding: 0;
     border-radius: 100%; }
     .node__image img {
-      padding: 10px;
-      width: 70px;
-      height: 70px; }
+      padding: .65vw;
+      width: 4.58vw;
+      height: 4.58vw; }
 
 .badge {
   -webkit-user-select: none;
@@ -140,18 +140,18 @@ button {
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  left: 718px;
-  top: 449px;
-  width: 90px;
-  height: 90px;
+  left: 50vw;
+  top: 50vh;
+  width: 5.89vw;
+  height: 5.89vw;
   z-index: 10;
   cursor: pointer;
   padding: 0;
   border-radius: 100%;
   background-color: transparent;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
-  .badge__text {
-    font-size: .9rem;
+  .badge .badge__text {
+    font-size: .94vw;
     font-weight: 300;
     fill: #fff; }
   .badge__path {

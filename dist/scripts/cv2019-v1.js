@@ -1,3 +1,4 @@
+
 const cv2019v1Layout = [
   {
     type: "badge",
@@ -405,18 +406,6 @@ const cv2019v1Layout = [
     text: [],
     color: "#3B3B78",
     image: "images/gulp-white.svg",
-    children: []
-  },
-  {
-    type: "node",
-    id: "git",
-    posVWVH: [
-      46.95,
-      89.52
-    ],
-    text: [],
-    color: "#3B3B78",
-    image: "images/git-white.svg",
     children: []
   }
 ]

@@ -144,7 +144,7 @@ const nodes = [];
 for (let i of cv2019v1Layout) {
   if (i.type == "badge") {
     console.log(i.posVWVH, i.children);
-    const node = new Badge(i.id, i.posVWVH, i.text, i.color, i.image || null, childrenIds = i.children);
+    const node = new Badge(i.id, i.posVWVH, i.text, i.color, i.image || null, i.children);
     nodes.push(node);
   } else if (i.type == "node") {
     const node = new Node(i.id, i.posVWVH, i.text, i.color, i.image || null, i.children);
@@ -159,33 +159,33 @@ for (let n of nodes) {
   n.move(n.posXY);
 }
 
-const nodesInfo1 = [];
+// const nodesInfo1 = [];
 
-function saveNodeInfo(destination, ...nodes) {
-  console.log(nodes);
-  console.log(nodes[1].getCoords(unit="vwvh"));
-  for (let n of nodes) {
-    let obj = {};
-    obj.type = n.type
-    obj.id = n.id;
-    obj.posVWVH = n.getCoords(unit="vwvh");
-    obj.text = n.text;
-    obj.color = n.color;
-    obj.image = n.image;
-    obj.children = n.children.map(i => i.id);
-    destination.push(obj)
-  }
-}
+// function saveNodeInfo(destination, ...nodes) {
+//   console.log(nodes);
+//   console.log(nodes[1].getCoords(unit="vwvh"));
+//   for (let n of nodes) {
+//     let obj = {};
+//     obj.type = n.type
+//     obj.id = n.id;
+//     obj.posVWVH = n.getCoords(unit="vwvh");
+//     obj.text = n.text;
+//     obj.color = n.color;
+//     obj.image = n.image;
+//     obj.children = n.children.map(i => i.id);
+//     destination.push(obj)
+//   }
+// }
 
-saveNodeInfo(nodesInfo1, ...nodes);
+// saveNodeInfo(nodesInfo1, ...nodes);
 
-const nodesInfo1Json = JSON.stringify(nodesInfo1);
+// const nodesInfo1Json = JSON.stringify(nodesInfo1);
 
-function download(content, fileName, contentType) {
-  var a = document.createElement("a");
-  var file = new Blob([content], {type: contentType});
-  a.href = URL.createObjectURL(file);
-  a.download = fileName;
-  a.click();
-}
+// function download(content, fileName, contentType) {
+//   var a = document.createElement("a");
+//   var file = new Blob([content], {type: contentType});
+//   a.href = URL.createObjectURL(file);
+//   a.download = fileName;
+//   a.click();
+// }
 // download(nodesInfo1Json, 'nodesInfo1.json', 'text/plain');

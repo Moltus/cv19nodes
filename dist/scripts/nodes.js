@@ -1,7 +1,8 @@
 
 class Node {
-  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, childrenIds=undefined) {
+  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, children) {
     console.log(arguments);
+    console.log("childrenIds is : ", children);
     this.id = id;
     // this.domElement = document.getElementById(this.id);
     this.text = text || [];
@@ -14,7 +15,7 @@ class Node {
     this.getColor(this.color);
     this.type = 'node';
     this.domConnections = document.getElementById((this.id + '__connections'));
-    this.childrenIds = childrenIds;
+    this.childrenIds = children;
     this.children = [];
     this.parents = [];
     this.bbox = this.domElement.getBoundingClientRect();
@@ -68,9 +69,15 @@ class Node {
 
   getChildren() {
     // method for adding children to the node.children property
+
     for (let i of this.childrenIds) {
-      this.children.push(document.getElementById(i)); 
+      for (let n of nodes) {
+        if (n.id == i) {
+          this.children.push(n);
+        }
+      }
     }
+
   }
 
   getParents() {
@@ -340,8 +347,8 @@ class Node {
 }
 
 class Badge extends Node {
-  constructor(id, initialPosition, text=undefined, color=undefined) {
-    super(id, initialPosition, text, color);
+  constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, children=undefined) {
+    super(id, posVWVH, text, color, image, children);
     this.type = 'badge';
   }
 
@@ -362,7 +369,7 @@ class Badge extends Node {
 
     // create svg and all subelements using .createElementNS
     let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttributeNS(null, "viewBow", "0 0 90 90");
+    svg.setAttributeNS(null, "viewBow", "0 0 45 45");
     svg.setAttributeNS(null, "class", "badge");
     svg.id = this.id;
     container.appendChild(svg);
