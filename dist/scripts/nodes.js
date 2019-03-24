@@ -124,16 +124,16 @@ class Node {
     // this.posXY = posXY;
   }
 
-  getCoords(unit='vwvh') {
+  getCoords(unit='px') {
     let posX = this.domElement.getBoundingClientRect().left;
     let posY = this.domElement.getBoundingClientRect().top;
     // output info depending unit argument (px or vw+vh)
     if (unit == 'px') {
-      return [posX, posY];
+      return [Math.round(posX * 100) / 100, Math.round(posY * 100) / 100];
     } else if (unit == 'vwvh') {
-      return [posX * 100 / document.documentElement.clientWidth, // unit = vw
-              posY * 100 / document.documentElement.clientHeight]; // unit = vh
-    } else console.log("unit chosen for coordinates must be 'px' or 'vwvh'")
+      return [Math.round((posX * 100 / document.documentElement.clientWidth) * 100) / 100, // unit = vw
+        Math.round((posY * 100 / document.documentElement.clientHeight) * 100) / 100]; // unit = vh
+    } else console.log("unit chosen for coordinates must be 'px' or 'vwvh'")   
   }
 
   linkChild(child) {
