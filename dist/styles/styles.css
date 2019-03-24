@@ -5,7 +5,9 @@ body {
   background-image: url(../images/bg.svg);
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
-  /* position: relative; /* for touch devices navigation */ }
+  overflow: visible; }
+  body.edit-mode {
+    overflow: hidden; }
 
 p {
   margin: 0;

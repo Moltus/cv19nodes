@@ -5,12 +5,11 @@ let offset = [0, 0];
 let dragTarget;
 var targetNodeObj;
 let isDown = false;
-// node and badge DOM elements
-var nodeElements = nodes.map(a => a.domElement);
+var nodeElements; // node and badge DOM elements
 
 function dragStart(e) {
+  if (!document.body.classList.contains("edit-mode")) return;
   dragTarget = e.target;
-  // console.log("drag target is : ", dragTarget);
   if (dragTarget !== this) return;
   if (nodeElements.includes(dragTarget)) {
     targetNodeObj = dragTarget;
@@ -41,9 +40,5 @@ function dragLeave(e) {
   isDown = false;
 }
 
-for (let node of nodeElements){
-  node.addEventListener('mousedown', dragStart, true);
-  node.addEventListener('mouseup', dragLeave, true);
-  node.addEventListener('mousemove', drag, true);
-}
+
 
