@@ -97,11 +97,7 @@ class Node {
     for (let parent of this.parents) parent.linkChild(this);
   }
 
-<<<<<<< HEAD
-  move(posXY, unit='vwvh', time=1000) {
-=======
   move(posXY, unit='px', time=1000) {
->>>>>>> pxpx
     // manual animated movement for nodes
     // this temporarily disables drag and drop movement
     // default transition is 1sec
