@@ -1,12 +1,14 @@
-
-const cv2019v1Layout = [
+const cv2019v2Layout = [
   {
     type: "badge",
     id: "crea-badge",
-    posVWVH: [468, 495],
+    posXY: [
+      466,
+      550
+    ],
     text: " --------- CREA -------- CREA",
     color: "#6D314F",
-    image: "",
+    image: null,
     children: [
       "crea1",
       "crea2"
@@ -15,10 +17,13 @@ const cv2019v1Layout = [
   {
     type: "badge",
     id: "code-badge",
-    posVWVH: [718, 466],
+    posXY: [
+      718,
+      466
+    ],
     text: " --------- CODE -------- CODE",
     color: "#3B3B78",
-    image: "",
+    image: null,
     children: [
       "crea-badge",
       "comm-badge",
@@ -29,10 +34,13 @@ const cv2019v1Layout = [
   {
     type: "badge",
     id: "comm-badge",
-    posVWVH: [968, 495],
+    posXY: [
+      974,
+      549
+    ],
     text: "------- COMM ------ COMM ",
     color: "#5F3270",
-    image: "",
+    image: null,
     children: [
       "comm1",
       "comm3",
@@ -42,16 +50,18 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "crea1",
-    posVWVH: [353, 210],
+    posXY: [
+      311,
+      167
+    ],
     text: [
       "-------- INFOGRAPHISTE 2D/3D ------ ",
       "Freelance 2005-2007, 2011-2018. Multimédia / Print.",
-      "3D : réalisation de vidéos pour l'informationnel / évènementiel. Modélisation en box-modeling hi-poly/low-poly. Animation en keyframing. Création de setups/riggings d'animation entièrement scriptés.",
-      "2D / print : création d'affiches, flyers, cartes de visite avec les outils de la gamme Adobe aussi bien sur du matriciel que du vectoriel."
-    
+      "3D : réalisation de vidéos pour de l'informationnel / évènementiel. Modélisation en box-modeling hi-poly / low-poly. Animation en keyframing. Création de setups / riggings d'animation scriptés.",
+      "2D / print : création d'affiches, flyers, cartes de visite. Utilisation des outils de la gamme Adobe aussi bien pour du matriciel que du vectoriel."
     ],
     color: "#6D314F",
-    image: "",
+    image: null,
     children: [
       "max3ds",
       "photoshop",
@@ -61,7 +71,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "crea2",
-    posVWVH: [120, 507],
+    posXY: [
+      127,
+      550
+    ],
     text: [
       "--------- SUPINFOCOM ARLES ---------",
       "Aujourd'hui Ecole MOPA - Ecole du film d'animation et de l'image de synthèse. 2003-2004.",
@@ -70,7 +83,7 @@ const cv2019v1Layout = [
       "----- BAC ARTS APPLIQUÉS 1998 ---"
     ],
     color: "#6D314F",
-    image: "",
+    image: null,
     children: [
       "crea3"
     ]
@@ -78,24 +91,30 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "crea3",
-    posVWVH: [120, 767],
+    posXY: [
+      127,
+      809
+    ],
     text: [
       "• Curiosité • Créativité • Polyvalence"
     ],
     color: "#6D314F",
-    image: "",
+    image: null,
     children: []
   },
   {
     type: "node",
     id: "code1",
-    posVWVH: [642, 262],
+    posXY: [
+      642,
+      262
+    ],
     text: [
       "---- IFOCOP DÉVELOPPEUR WEB ---",
       "Montigny-le-Bretonneux 2018-2019. Formation diplomante bac+3 en alternance. Front-end + back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."
     ],
     color: "#3B3B78",
-    image: "",
+    image: null,
     children: [
       "sql",
       "php",
@@ -105,7 +124,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "code2",
-    posVWVH: [642, 605],
+    posXY: [
+      642,
+      605
+    ],
     text: [
       "- FORMATIONS EN LIGNE UDEMY -",
       "\"Git a Web Developer Job: Mastering the Modern Workflow\", Brad Schiff.",
@@ -115,7 +137,7 @@ const cv2019v1Layout = [
       "\"Eloquent Javascript\", Marijn Haverbeke."
     ],
     color: "#3B3B78",
-    image: "",
+    image: null,
     children: [
       "html5",
       "css3",
@@ -127,54 +149,66 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "comm1",
-    posVWVH: [932, 226],
+    posXY: [
+      960,
+      285
+    ],
     text: [
       " -------- PIÈCE THÉÂTRE ZOBAR -------",
       "Comédien. mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014.",
-      " --------- COURTS-MÉTRAGES ----------",
-      "Acteur au sein de différents courts-métrages."
-      
+      " ---------- COURTS-MÉTRAGES ---------",
+      "Acteur au sein de différents courts-métrages. 2010-2012"
     ],
     color: "#5F3270",
-    image: "",
+    image: null,
     children: [
-      "comm2"
+      "comm2",
+      "comm5"
     ]
   },
   {
     type: "node",
     id: "comm2",
-    posVWVH: [1220, 287],
+    posXY: [
+      1271,
+      285
+    ],
     text: [
       "• Expression en public",
       "• Improvisation • Face caméra"
     ],
     color: "#5F3270",
-    image: "",
+    image: null,
     children: []
   },
   {
     type: "node",
     id: "comm3",
-    posVWVH: [1167, 502],
+    posXY: [
+      1164,
+      695
+    ],
     text: [
       "• ANGLAIS LU ET PARLÉ. (niv. B2+)",
       "language technique / conversation."
     ],
     color: "#5F3270",
-    image: "",
+    image: null,
     children: []
   },
   {
     type: "node",
     id: "comm4",
-    posVWVH: [1167, 632],
+    posXY: [
+      1164,
+      539
+    ],
     text: [
       "------------ COURS FLORENT -----------",
       "Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement. Paris 2007-2010."
     ],
     color: "#5F3270",
-    image: "",
+    image: null,
     children: [
       "comm5"
     ]
@@ -182,19 +216,25 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "comm5",
-    posVWVH: [1167, 852],
+    posXY: [
+      1273,
+      392
+    ],
     text: [
       " • Communication • Adaptabilité",
       " • Patience • Structure"
     ],
     color: "#5F3270",
-    image: "",
+    image: null,
     children: []
   },
   {
     type: "node",
     id: "max3ds",
-    posVWVH: [100, 272],
+    posXY: [
+      63,
+      271
+    ],
     text: [],
     color: "#6D314F",
     image: "images/3dsmax-white.svg",
@@ -203,7 +243,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "photoshop",
-    posVWVH: [195, 210],
+    posXY: [
+      152,
+      178
+    ],
     text: [],
     color: "#6D314F",
     image: "images/photoshop-white.svg",
@@ -212,7 +255,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "illustrator",
-    posVWVH: [195, 335],
+    posXY: [
+      153,
+      365
+    ],
     text: [],
     color: "#6D314F",
     image: "images/illustrator-white.svg",
@@ -221,7 +267,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "sql",
-    posVWVH: [610, 100],
+    posXY: [
+      594,
+      100
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/sql-white.svg",
@@ -230,7 +279,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "php",
-    posVWVH: [717, 100],
+    posXY: [
+      717,
+      100
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/php-white.svg",
@@ -239,7 +291,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "ajax",
-    posVWVH: [824, 100],
+    posXY: [
+      836,
+      99
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/ajax-white.svg",
@@ -248,7 +303,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "html5",
-    posVWVH: [468, 638],
+    posXY: [
+      464,
+      694
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/html5-white.svg",
@@ -257,7 +315,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "css3",
-    posVWVH: [468, 764],
+    posXY: [
+      461,
+      842
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/css3-white.svg",
@@ -268,7 +329,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "sass",
-    posVWVH: [468, 902],
+    posXY: [
+      310,
+      917
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/sass-white.svg",
@@ -277,7 +341,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "python",
-    posVWVH: [968, 638],
+    posXY: [
+      972,
+      694
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/python-white.svg",
@@ -286,7 +353,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "js",
-    posVWVH: [968, 764],
+    posXY: [
+      976,
+      842
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/js-white.svg",
@@ -297,7 +367,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "gulp",
-    posVWVH: [968, 902],
+    posXY: [
+      1127,
+      917
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/gulp-white.svg",
@@ -306,7 +379,10 @@ const cv2019v1Layout = [
   {
     type: "node",
     id: "git",
-    posVWVH: [717, 923],
+    posXY: [
+      717,
+      923
+    ],
     text: [],
     color: "#3B3B78",
     image: "images/git-white.svg",

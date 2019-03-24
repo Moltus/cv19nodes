@@ -1,15 +1,12 @@
 
 class Node {
   constructor(id, posVWVH, text=undefined, color=undefined, image=undefined, children) {
-    console.log(arguments);
-    console.log("childrenIds is : ", children);
+
     this.id = id;
-    // this.domElement = document.getElementById(this.id);
     this.text = text || [];
     this.domElement = this.createElements();
     this.image = image;
     if (image) this.getImage(image)
-    // console.log("domElement is : ", this.domElement);
     this.posXY = posVWVH;
     this.color = color;
     this.getColor(this.color);
@@ -101,7 +98,7 @@ class Node {
     for (let parent of this.parents) parent.linkChild(this);
   }
 
-  move(posXY, unit='vwvh', time=1000) {
+  move(posXY, unit='px', time=1000) {
     // manual animated movement for nodes
     // this temporarily disables drag and drop movement
     // default transition is 1sec

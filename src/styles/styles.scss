@@ -4,15 +4,18 @@ $codeColor: #3B3B78;
 $commColor: #5F3270;
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #2a2a2a;
-    background-image: url(../images/bg.svg);
-    background-size: 30px 30px;
-    font-family: 'Roboto', sans-serif;
-    /* position: relative; /* for touch devices navigation */
-    overflow: hidden; 
-    }
+  margin: 0;
+  padding: 0;
+  background-color: #2a2a2a;
+  background-image: url(../images/bg.svg);
+  background-size: 30px 30px;
+  font-family: 'Roboto', sans-serif;
+  overflow: visible;
+
+  &.edit-mode {
+    overflow: hidden;
+  }
+}
   
 p {
   margin: 0;
@@ -148,36 +151,30 @@ button {
 .node {
   user-select: none;
   position: absolute;
-  left: 50vw;
-  top: 50vh;
-  // left: 50vw;
-  // top : 50vh;
-  // padding: 1vmax 1.33vmax;
-  // width: 7.635vmax;
-  padding: 1.9vmin 1.9vmin;
+  left: 718px;
+  top: 449px;
+  padding: 15px 20px;
   z-index: 10;
   margin: 0;
   cursor: pointer;
-  font-size: .84vw;
+  font-size: .8rem;
   font-weight: 300;
-  line-height: 1.15vw;
+  line-height: 1.1rem;
   color: #fff;
-  width: 13.1vw;
+  width: 200px;
   border: 1px solid #fff;
-  border-radius: 2vmin;
+  border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 
   &__image {
-    // width: 90px;
-    // height: 90px;
-    width: 5.89vw;
-    height: 5.89vw;
+    width: 90px;
+    height: 90px;
     padding: 0;
     border-radius: 100%;
     & img {
-      padding: .65vw;
-      width: 4.58vw;
-      height: 4.58vw;
+      padding: 10px;
+      width: 70px;
+      height: 70px;
     }
   }
 }
@@ -185,12 +182,10 @@ button {
 .badge {
   user-select: none;
   position: absolute;
-  left: 50vw;
-  top: 50vh;
-  // width: 90px;
-  // height: 90px;
-  width: 5.89vw;
-  height: 5.89vw;
+  left: 718px;
+  top: 449px;
+  width: 90px;
+  height: 90px;
   z-index: 10;
   cursor: pointer;
   padding: 0;
@@ -198,10 +193,8 @@ button {
   background-color: transparent;
   box-shadow: 5px 5px 10px rgba(0,0,0,.5); 
 
-  &
-
   &__text {
-    font-size: .94vw;
+    font-size: .9rem;
     font-weight: 300;
     fill: #fff; 
   }
