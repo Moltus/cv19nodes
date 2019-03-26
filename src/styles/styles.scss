@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2a2a2a;
-  background-image: url(../images/bg.svg);
+  background-image: url(../images/bg-dk-brown.svg);
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   overflow: visible;
@@ -20,6 +20,11 @@ body {
   &.edit-mode {
     overflow: hidden;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
   
 p {
@@ -76,7 +81,7 @@ hr {
   }
 
   &__big {
-    text-shadow: 0 0 50px;
+    text-shadow: 0 0 20px;
     display: inline-block;
     color: $creaColor;
     margin: 0;
