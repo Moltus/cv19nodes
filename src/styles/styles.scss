@@ -16,7 +16,7 @@ body {
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   overflow: visible;
-  animation: lock 1.6s forwards;
+  animation: lock 1.6s;
 
   @keyframes lock {
     99% {overflow: hidden;}
