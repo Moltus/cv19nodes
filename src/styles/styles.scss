@@ -21,6 +21,11 @@ body {
     overflow: hidden;
   }
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
   
 p {
   margin: 15px;
@@ -76,7 +81,7 @@ hr {
   }
 
   &__big {
-    text-shadow: 0 0 50px;
+    text-shadow: 0 0 20px;
     display: inline-block;
     color: $creaColor;
     margin: 0;

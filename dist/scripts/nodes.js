@@ -60,7 +60,7 @@ class Node {
       + ',' + (Math.floor(Math.random() * 100) + 1)
       + ',' + (Math.floor(Math.random() * 100) + 1) + ')';
     this.domElement.style.backgroundColor = nodeColor;
-    this.domElement.style.boxShadow = `0 0 50px ${nodeColor}`;
+    this.domElement.style.boxShadow = `0 0 20px ${nodeColor}`;
     this.color = nodeColor;
   }
 
@@ -363,7 +363,7 @@ class Badge extends Node {
       + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
     let bg = document.getElementById(this.id + '__bg');
     bg.style.fill = nodeColor;
-    this.domElement.style.boxShadow = `0 0 50px ${nodeColor}, 0 0 50px ${nodeColor} inset`;
+    this.domElement.style.boxShadow = `0 0 20px ${nodeColor}, 0 0 20px ${nodeColor} inset`;
     this.color = nodeColor;
   }
 
