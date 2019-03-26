@@ -27,9 +27,18 @@ class Node {
     nodeElement.className = 'node';
     nodeElement.id = this.id;
     
-    for (let i of this.text) {
-      let para = document.createElement("p");
-      let txt = document.createTextNode(i);
+    for (let i=0; i < this.text.length; i++) {
+      let para;
+      if ((/[A-Z][-A-Z]/.test(this.text[i].substring(0,2))) || 
+          this.text[i][0] === "•") {
+        para = document.createElement("h4");
+        if (i != 0) {
+        let hr = document.createElement("hr");
+        nodeElement.appendChild(hr);
+        }
+      }
+      else para = document.createElement("p");
+      let txt = document.createTextNode(this.text[i]);
       para.appendChild(txt);
       nodeElement.appendChild(para); 
     }
@@ -51,6 +60,7 @@ class Node {
       + ',' + (Math.floor(Math.random() * 100) + 1)
       + ',' + (Math.floor(Math.random() * 100) + 1) + ')';
     this.domElement.style.backgroundColor = nodeColor;
+    this.domElement.style.boxShadow = `0 0 50px ${nodeColor}`;
     this.color = nodeColor;
   }
 
@@ -60,7 +70,6 @@ class Node {
     img.className = this.id + "__img";
     this.domElement.appendChild(img);
     this.domElement.classList.add("node__image");
-    this.image = img;
   }
 
   getChildren() {
@@ -354,6 +363,7 @@ class Badge extends Node {
       + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
     let bg = document.getElementById(this.id + '__bg');
     bg.style.fill = nodeColor;
+    this.domElement.style.boxShadow = `0 0 50px ${nodeColor}, 0 0 50px ${nodeColor} inset`;
     this.color = nodeColor;
   }
 

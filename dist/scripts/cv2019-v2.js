@@ -7,7 +7,7 @@ const cv2019v2Layout = [
       550
     ],
     text: " --------- CREA -------- CREA",
-    color: "#6D314F",
+    color: "#842d50",
     image: null,
     children: [
       "crea1",
@@ -22,7 +22,7 @@ const cv2019v2Layout = [
       466
     ],
     text: " --------- CODE -------- CODE",
-    color: "#3B3B78",
+    color: "#94763c",
     image: null,
     children: [
       "crea-badge",
@@ -39,7 +39,7 @@ const cv2019v2Layout = [
       549
     ],
     text: "------- COMM ------ COMM ",
-    color: "#5F3270",
+    color: "#2c5b59",
     image: null,
     children: [
       "comm1",
@@ -55,12 +55,12 @@ const cv2019v2Layout = [
       167
     ],
     text: [
-      "-------- INFOGRAPHISTE 2D/3D ------ ",
+      "INFOGRAPHISTE 2D/3D",
       "Freelance 2005-2007, 2011-2018. Multimédia / Print.",
       "3D : réalisation de vidéos pour de l'informationnel / évènementiel. Modélisation en box-modeling hi-poly / low-poly. Animation en keyframing. Création de setups / riggings d'animation scriptés.",
       "2D / print : création d'affiches, flyers, cartes de visite. Utilisation des outils de la gamme Adobe aussi bien pour du matriciel que du vectoriel."
     ],
-    color: "#6D314F",
+    color: "#842d50",
     image: null,
     children: [
       "max3ds",
@@ -76,13 +76,13 @@ const cv2019v2Layout = [
       550
     ],
     text: [
-      "--------- SUPINFOCOM ARLES ---------",
+      "SUPINFOCOM ARLES",
       "Aujourd'hui Ecole MOPA - Ecole du film d'animation et de l'image de synthèse. 2003-2004.",
-      "------------ E-ART SUP PARIS -----------",
+      "E-ART SUP PARIS",
       "École de multimédia - création numérique. 2001-2003.",
-      "----- BAC ARTS APPLIQUÉS 1998 ---"
+      "BAC ARTS APPLIQUÉS 1998"
     ],
-    color: "#6D314F",
+    color: "#842d50",
     image: null,
     children: [
       "crea3"
@@ -98,7 +98,7 @@ const cv2019v2Layout = [
     text: [
       "• Curiosité • Créativité • Polyvalence"
     ],
-    color: "#6D314F",
+    color: "#842d50",
     image: null,
     children: []
   },
@@ -110,15 +110,15 @@ const cv2019v2Layout = [
       262
     ],
     text: [
-      "---- IFOCOP DÉVELOPPEUR WEB ---",
+      "IFOCOP DÉVELOPPEUR WEB",
       "Montigny-le-Bretonneux 2018-2019. Formation diplomante bac+3 en alternance. Front-end + back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."
     ],
-    color: "#3B3B78",
+    color: "#94763c",
     image: null,
     children: [
-      "sql",
       "php",
-      "ajax"
+      "ajax",
+      "wordpress"
     ]
   },
   {
@@ -129,14 +129,14 @@ const cv2019v2Layout = [
       605
     ],
     text: [
-      "- FORMATIONS EN LIGNE UDEMY -",
+      "FORMATIONS EN LIGNE UDEMY",
       "\"Git a Web Developer Job: Mastering the Modern Workflow\", Brad Schiff.",
       "\"The Complete JavaScript Course\", Jonas Schmedtmann.",
-      "----- LIVRES PROGRAMMATION -----",
+      "LIVRES PROGRAMMATION",
       "\"Learning Python The Hard Way\", Zed Shaw.",
       "\"Eloquent Javascript\", Marijn Haverbeke."
     ],
-    color: "#3B3B78",
+    color: "#94763c",
     image: null,
     children: [
       "html5",
@@ -154,12 +154,12 @@ const cv2019v2Layout = [
       285
     ],
     text: [
-      " -------- PIÈCE THÉÂTRE ZOBAR -------",
-      "Comédien. mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris 2013-2014.",
-      " --------- COURTS-MÉTRAGES ---------",
+      "PIÈCE THÉÂTRE ZOBAR",
+      "Comédien. mise-en-scène M. Tracke. Théâtre de Ménilmontant Paris, 2013-2014.",
+      "COURTS-MÉTRAGES",
       "Acteur au sein de différents courts-métrages. 2010-2012"
     ],
-    color: "#5F3270",
+    color: "#2c5b59",
     image: null,
     children: [
       "comm2",
@@ -174,10 +174,9 @@ const cv2019v2Layout = [
       285
     ],
     text: [
-      "• Expression en public",
-      "• Improvisation • Face caméra"
+      "• Expression en public • Improvisation • Face caméra"
     ],
-    color: "#5F3270",
+    color: "#2c5b59",
     image: null,
     children: []
   },
@@ -189,10 +188,11 @@ const cv2019v2Layout = [
       695
     ],
     text: [
-      "• ANGLAIS LU ET PARLÉ. (niv. B2+)",
-      "language technique / conversation."
+      "ANGLAIS LU ET PARLÉ",
+      "language technique / conversation.",
+      "niveau B2+"
     ],
-    color: "#5F3270",
+    color: "#2c5b59",
     image: null,
     children: []
   },
@@ -204,10 +204,10 @@ const cv2019v2Layout = [
       539
     ],
     text: [
-      "------------ COURS FLORENT -----------",
+      "COURS FLORENT",
       "Formation à l'acteur. Jeu face caméra, improvisation, corps en mouvement. Paris 2007-2010."
     ],
-    color: "#5F3270",
+    color: "#2c5b59",
     image: null,
     children: [
       "comm5"
@@ -221,10 +221,9 @@ const cv2019v2Layout = [
       392
     ],
     text: [
-      " • Communication • Adaptabilité",
-      " • Patience • Structure"
+      "• Communication • Adaptabilité • Patience • Structure"
     ],
-    color: "#5F3270",
+    color: "#2c5b59",
     image: null,
     children: []
   },
@@ -236,7 +235,7 @@ const cv2019v2Layout = [
       271
     ],
     text: [],
-    color: "#6D314F",
+    color: "#842d50",
     image: "images/3dsmax-white.svg",
     children: []
   },
@@ -248,7 +247,7 @@ const cv2019v2Layout = [
       178
     ],
     text: [],
-    color: "#6D314F",
+    color: "#842d50",
     image: "images/photoshop-white.svg",
     children: []
   },
@@ -260,20 +259,20 @@ const cv2019v2Layout = [
       365
     ],
     text: [],
-    color: "#6D314F",
+    color: "#842d50",
     image: "images/illustrator-white.svg",
     children: []
   },
   {
     type: "node",
-    id: "sql",
+    id: "ajax",
     posXY: [
       594,
       100
     ],
     text: [],
-    color: "#3B3B78",
-    image: "images/sql-white.svg",
+    color: "#94763c",
+    image: "images/ajax-white.svg",
     children: []
   },
   {
@@ -284,20 +283,20 @@ const cv2019v2Layout = [
       100
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/php-white.svg",
     children: []
   },
   {
     type: "node",
-    id: "ajax",
+    id: "wordpress",
     posXY: [
       836,
       99
     ],
     text: [],
-    color: "#3B3B78",
-    image: "images/ajax-white.svg",
+    color: "#94763c",
+    image: "images/wordpress-white.svg",
     children: []
   },
   {
@@ -308,7 +307,7 @@ const cv2019v2Layout = [
       694
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/html5-white.svg",
     children: []
   },
@@ -320,7 +319,7 @@ const cv2019v2Layout = [
       842
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/css3-white.svg",
     children: [
       "sass"
@@ -334,7 +333,7 @@ const cv2019v2Layout = [
       917
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/sass-white.svg",
     children: []
   },
@@ -346,7 +345,7 @@ const cv2019v2Layout = [
       694
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/python-white.svg",
     children: []
   },
@@ -358,7 +357,7 @@ const cv2019v2Layout = [
       842
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/js-white.svg",
     children: [
       "gulp"
@@ -372,7 +371,7 @@ const cv2019v2Layout = [
       917
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/gulp-white.svg",
     children: []
   },
@@ -384,7 +383,7 @@ const cv2019v2Layout = [
       923
     ],
     text: [],
-    color: "#3B3B78",
+    color: "#94763c",
     image: "images/git-white.svg",
     children: []
   }
