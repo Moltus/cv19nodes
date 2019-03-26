@@ -34,7 +34,7 @@ function initLayout(layout) {
   }
 }
 
-initLayout(cv2019v2Layout);
+initLayout(cv2019v3Layout);
 
 const nodesInfo1 = [];
 
@@ -43,7 +43,7 @@ function saveNodeInfo(destination, ...nodes) {
     let obj = {};
     obj.type = n.type
     obj.id = n.id;
-    obj.posVWVH = n.getCoords(unit="px");
+    obj.posXY = n.getCoords(unit="px");
     obj.text = n.text;
     obj.color = n.color;
     obj.image = n.image;

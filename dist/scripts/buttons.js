@@ -32,7 +32,7 @@ function randomColors() {
 }
 
 function resetNodes() {
-  initLayout(cv2019v2Layout);
+  initLayout(cv2019v3Layout);
 }
 
 
