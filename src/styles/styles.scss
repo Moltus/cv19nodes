@@ -12,14 +12,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2a2a2a;
-<<<<<<< HEAD
-  background-image: url(../images/bg-dk-brown.svg);
-=======
   background-image: url(../images/bg-light.svg);
->>>>>>> 76a2450a78f2ad04b8044fb6888e40d089481d8a
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   overflow: visible;
+  animation: lock 1.6s forwards;
+
+  @keyframes lock {
+    99% {overflow: hidden;}
+    100% {overflow: visible;}
+  }
 
   &.edit-mode {
     overflow: hidden;
@@ -65,7 +67,7 @@ hr {
     &>p{
       margin: 11px;
       letter-spacing: .225rem;
-      text-shadow: 0 0 5px#000;
+      text-shadow: 0 0 5px #443a33;
     }
 
     & p:first-child {
@@ -135,7 +137,7 @@ hr {
       letter-spacing: .15rem;
       top: 43px;
       left: 95px;
-      text-shadow: 0 0 5px#000;
+      text-shadow: 0 0 5px#443a33;
     }
   }
 }
