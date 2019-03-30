@@ -6,8 +6,8 @@ body {
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   overflow: visible;
-  -webkit-animation: lock 1.6s forwards;
-          animation: lock 1.6s forwards; }
+  -webkit-animation: lock 1.6s;
+          animation: lock 1.6s; }
 
 @-webkit-keyframes lock {
   99% {
@@ -104,6 +104,9 @@ hr {
       top: 43px;
       left: 95px;
       text-shadow: 0 0 5px #443a33; }
+
+h4 {
+  letter-spacing: .1rem; }
 
 .container {
   position: relative; }
