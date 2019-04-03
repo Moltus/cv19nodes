@@ -56,6 +56,8 @@ hr {
     font-weight: 500;
     display: inline-block; }
     .id-header__info > p {
+      position: relative;
+      left: 650px;
       color: black;
       margin: 11px;
       letter-spacing: .225rem; }
@@ -73,9 +75,10 @@ hr {
     font-size: 5.4rem;
     font-weight: 300;
     position: relative;
-    top: 0; }
+    top: 0;
+    left: 650px; }
     .id-header__big__clement {
-      left: 660px; }
+      left: 10px; }
     .id-header__big--medium {
       text-shadow: none;
       font-weight: 300;

@@ -69,6 +69,8 @@ hr {
   &__info {
     color: black;
     &>p{
+      position: relative;
+      left: 650px;
       color: black;
       margin: 11px;
       letter-spacing: .225rem;
@@ -102,9 +104,10 @@ hr {
     font-weight: 300;
     position: relative;
     top: 0;
+    left: 650px;
 
     &__clement {
-      left: 660px;
+      left: 10px;
     }
 
     &--medium {
