@@ -74,6 +74,8 @@ hr {
     font-weight: 300;
     position: relative;
     top: 0; }
+    .id-header__big__clement {
+      left: 660px; }
     .id-header__big--medium {
       text-shadow: none;
       font-weight: 300;
@@ -83,6 +85,9 @@ hr {
       color: #2e3534;
       font-size: 2.5rem;
       font-weight: 300; }
+      .id-header__big--medium__benoit {
+        left: 70px;
+        letter-spacing: 1.5rem; }
     .id-header__big--small {
       text-shadow: none;
       font-weight: 300;
@@ -93,26 +98,12 @@ hr {
       color: #2e3534;
       font-size: 1.5rem;
       font-weight: 300; }
-  .id-header__medium {
-    display: inline-block;
-    color: #9bd4d1;
-    margin: 0;
-    padding: 0;
-    font-size: 3.4rem;
-    font-weight: 300;
-    position: relative;
-    top: -103px;
-    left: 1000px; }
-    .id-header__medium img {
-      height: 60px;
-      margin-right: 10px; }
-    .id-header__medium span {
-      color: black;
-      font-size: .8rem;
-      font-weight: 500;
-      letter-spacing: .15rem;
-      top: 43px;
-      left: 95px; }
+
+.logo-perso {
+  width: 80px;
+  position: absolute;
+  top: 990px;
+  left: 1470px; }
 
 .container {
   position: relative; }
