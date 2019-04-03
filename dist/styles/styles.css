@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2a2a2a;
-  background-image: url(../images/bg-light.svg);
+  background-image: url(../images/bg-white.svg);
   background-size: 30px 30px;
   font-family: 'Roboto', sans-serif;
   overflow: visible;
@@ -25,9 +25,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: black; }
 
 p {
+  font-weight: 700;
   margin: 15px;
   padding: 0; }
   p ~ p {
@@ -39,7 +40,7 @@ h4 {
   padding: 0; }
 
 hr {
-  border: .5px solid #fff; }
+  border: .5px solid #000; }
 
 .id-header {
   position: absolute;
@@ -50,13 +51,14 @@ hr {
   color: #fff;
   font-weight: 100; }
   .id-header__info {
+    color: black;
     font-size: .8rem;
     font-weight: 500;
     display: inline-block; }
     .id-header__info > p {
+      color: black;
       margin: 11px;
-      letter-spacing: .225rem;
-      text-shadow: 0 0 5px #443a33; }
+      letter-spacing: .225rem; }
     .id-header__info p:first-child {
       letter-spacing: .13rem; }
     .id-header__info p:last-child {
@@ -64,9 +66,8 @@ hr {
   .id-header strong {
     font-weight: 500; }
   .id-header__big {
-    text-shadow: 0 0 20px;
     display: inline-block;
-    color: #842d50;
+    color: #9bd4d1;
     margin: 0;
     padding: 0;
     font-size: 5.4rem;
@@ -79,8 +80,9 @@ hr {
       position: absolute;
       top: 1.6rem;
       left: 1.6rem;
-      color: #fff;
-      font-size: 2.5rem; }
+      color: #2e3534;
+      font-size: 2.5rem;
+      font-weight: 300; }
     .id-header__big--small {
       text-shadow: none;
       font-weight: 300;
@@ -88,22 +90,29 @@ hr {
       position: absolute;
       top: 2.2rem;
       left: 1rem;
-      color: #fff;
-      font-size: 1.5rem; }
-  .id-header h3 {
+      color: #2e3534;
+      font-size: 1.5rem;
+      font-weight: 300; }
+  .id-header__medium {
     display: inline-block;
+    color: #9bd4d1;
+    margin: 0;
+    padding: 0;
+    font-size: 3.4rem;
+    font-weight: 300;
     position: relative;
-    left: 570px; }
-    .id-header h3 img {
+    top: -103px;
+    left: 1000px; }
+    .id-header__medium img {
       height: 60px;
       margin-right: 10px; }
-    .id-header h3 span {
+    .id-header__medium span {
+      color: black;
       font-size: .8rem;
       font-weight: 500;
       letter-spacing: .15rem;
       top: 43px;
-      left: 95px;
-      text-shadow: 0 0 5px #443a33; }
+      left: 95px; }
 
 .container {
   position: relative; }
@@ -154,9 +163,9 @@ button {
   font-size: .8rem;
   font-weight: 300;
   line-height: 1.1rem;
-  color: #fff;
+  color: #000;
   width: 240px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 20px; }
   .node__image {
     width: 90px;
@@ -185,12 +194,12 @@ button {
   background-color: transparent; }
   .badge__text {
     font-size: .9rem;
-    font-weight: 300;
+    font-weight: 700;
     fill: #fff; }
   .badge__path {
     fill: transparent; }
   .badge__bg {
-    stroke: #fff;
+    stroke: #000;
     stroke-miterlimit: 10; }
 
 .connections {
@@ -202,45 +211,45 @@ button {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: #fff; }
+  background-color: #000; }
 
 .link {
   position: absolute; }
   .link--top-left {
     border-top-left-radius: 50px;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff; }
+    border-top: 1px solid #000;
+    border-left: 1px solid #000; }
   .link--top-right {
     border-top-right-radius: 50px;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff; }
+    border-top: 1px solid #000;
+    border-right: 1px solid #000; }
   .link--bottom-left {
     border-bottom-left-radius: 50px;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff; }
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000; }
   .link--bottom-right {
     border-bottom-right-radius: 50px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff; }
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000; }
 
 .arrow {
   position: absolute; }
   .arrow--up {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 14px solid #fff; }
+    border-bottom: 14px solid #000; }
   .arrow--down {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 14px solid #fff; }
+    border-top: 14px solid #000; }
   .arrow--right {
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 14px solid #fff; }
+    border-left: 14px solid #000; }
   .arrow--left {
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-right: 14px solid #fff; }
+    border-right: 14px solid #000; }
 
 /* This to prevent clicks to select svg child elements */
 .node-container > * > * {
