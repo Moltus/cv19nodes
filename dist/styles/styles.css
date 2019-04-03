@@ -112,7 +112,7 @@ h4 {
   position: relative; }
 
 .buttons {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 0;
   font-size: .8rem;
