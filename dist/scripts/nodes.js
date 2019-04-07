@@ -362,7 +362,9 @@ class Badge extends Node {
       + ',' + (Math.floor(Math.random() * 30) + 50)
       + ',' + (Math.floor(Math.random() * 30) + 50) + ')';
     let bg = document.getElementById(this.id + '__bg');
-    bg.style.fill = nodeColor;
+    bg.style.stroke = nodeColor;
+    let text = document.getElementById(this.id + '__text');
+    text.style.fill = nodeColor;
     // this.domElement.style.boxShadow = `0 0 20px ${nodeColor}, 0 0 50px ${nodeColor} inset`;
     this.color = nodeColor;
   }
@@ -399,6 +401,7 @@ class Badge extends Node {
     // text from constructor arg
     let svgTxt = document.createElementNS("http://www.w3.org/2000/svg", 'text');
     svgTxt.setAttributeNS(null, "class", "badge__text");
+    svgTxt.id = this.id + "__text";
     svg.appendChild(svgTxt);
     let txtPath = document.createElementNS("http://www.w3.org/2000/svg", 'textPath');
     let pathXlink = '#' + this.id + '__path';

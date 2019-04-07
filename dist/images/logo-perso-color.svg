@@ -1,26 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="205 -213 500 500" style="enable-background:new 205 -213 500 500;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FDAA30;}
-	.st1{fill:#3E64ED;}
-	.st2{fill:#F95452;}
-	.st3{fill:#BAE83F;}
-</style>
-<title>logo7-bg</title>
-<g>
-	<circle class="st0" cx="567.2" cy="-75.1" r="43.9"/>
-	<circle class="st1" cx="567.2" cy="149.1" r="43.9"/>
-	<circle class="st2" cx="342.9" cy="149.1" r="43.9"/>
-	<ellipse class="st3" cx="342.9" cy="-75" rx="43.9" ry="43.9"/>
-	<path d="M634.2,105.3v44l0,0c0,37.1-30.1,67.1-67.1,67.1c-37.1,0-67.1-30.1-67.1-67.1V47.9h-34.2v101.4
-		c-0.6,56,44.4,101.9,100.4,102.4s101.9-44.4,102.4-100.4c0-0.7,0-1.3,0-2v-44H634.2z"/>
-	<path d="M299-8.1h44c37.1,0,67.1-30.1,67.1-67.1s-30.1-67.1-67.2-67.1l-101.3-0.1v-34.2H343c56,0.6,101,46.4,100.4,102.4
-		C442.9-19,398.2,25.7,343,26.2h-44V-8.1z"/>
-	<path d="M634.2-31.2v-44l0,0c0-37.1-30.1-67.1-67.1-67.1c-37.1,0-67.1,30.1-67.1,67.1V26.2h-34.2V-75.1
-		c-0.6-56,44.4-101.9,100.4-102.4s101.9,44.4,102.4,100.4c0,0.7,0,1.3,0,2v44L634.2-31.2z"/>
-	<path d="M299,82.1h44c37.1,0,67.1,30.1,67.1,67.1S380,216.3,343,216.3l-101.4,0.1v34.2H343c56,0,101.4-45.4,101.4-101.5
-		c0-56-45.4-101.4-101.4-101.4h-44V82.1z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 190">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #bae83f;
+      }
+
+      .cls-3 {
+        fill: #3e64ed;
+      }
+
+      .cls-4 {
+        fill: #fdaa30;
+      }
+
+      .cls-5 {
+        fill: #f95452;
+      }
+    </style>
+  </defs>
+  <title>logo-final-fullspace</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" width="190" height="190"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="c-bot" d="M175,145a30,30,0,0,1-60,0V100H100v45a45,45,0,0,0,90,0"/>
+    <path id="c-top" d="M190,45a45,45,0,0,0-90,0V90h15V45a30,30,0,0,1,60,0"/>
+    <path id="b-bot" d="M45,15a30,30,0,0,1,0,60H0V90H45A45,45,0,0,0,45,0"/>
+    <path id="b-top" d="M45,190a45,45,0,0,0,0-90H0v15H45a30,30,0,0,1,0,60"/>
+    <circle id="circle4" class="cls-2" cx="45" cy="145" r="20"/>
+    <circle id="circle3" class="cls-3" cx="145" cy="145" r="20"/>
+    <circle id="circle2" class="cls-4" cx="145" cy="45" r="20"/>
+    <circle id="circle1" class="cls-5" cx="45" cy="45" r="20"/>
+  </g>
 </svg>

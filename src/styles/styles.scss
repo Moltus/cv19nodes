@@ -107,10 +107,10 @@ hr {
 }
 
 .logo-perso {
-  width: 80px;
+  width: 60px;
   position: absolute;
-  top: 900px;
-  left: 1480px;
+  top: 910px;
+  left: 1510px;
 }
 
 .container {
@@ -205,15 +205,17 @@ button {
   // box-shadow: 5px 5px 10px rgba(0,0,0,.5); 
 
   &__text {
-    font-size: .9rem;
-    font-weight: 700;
-    fill: #fff; 
+    font-size: 1rem;
+    font-weight: 900;
+    // fill: #fff; 
   }
   &__path {
     fill: transparent; 
   }
   &__bg {
-    stroke: #000;
+    fill: #fff;
+    // stroke: #000;
+    stroke-width: 3px;
     stroke-miterlimit: 10; 
   }
 }
