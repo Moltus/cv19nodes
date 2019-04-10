@@ -4,4 +4,4 @@ Goal is to make a fully WYSIWYG text and image node input system with every node
 Fully ES6 classes oriented, **every node is an object** ; children and parent nodes being properties of each one.
 User would be able to save his layouts on .json files.
 
-Currently no node input (WIP). Just buttons to show the **dynamic** nature of the system.
+There is currently no way to input texts or images (WIP), just buttons to demo the mechanics behind.
