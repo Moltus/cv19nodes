@@ -33,8 +33,15 @@ class Node {
           this.text[i][0] === "•") {
         para = document.createElement("h4");
         if (i != 0) {
-        let hr = document.createElement("hr");
-        nodeElement.appendChild(hr);
+          let hr = document.createElement("hr");
+          nodeElement.appendChild(hr);
+        }
+      } else if (/>/.test(this.text[i].substring(0))) {
+        para = document.createElement("h3");
+        this.text[i] = this.text[i].substring(1);
+        if (i != 0) {
+          let hr = document.createElement("hr");
+          nodeElement.appendChild(hr);
         }
       }
       else para = document.createElement("p");

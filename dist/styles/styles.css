@@ -34,6 +34,11 @@ p {
   p ~ p {
     margin-top: 10px; }
 
+h3 {
+  text-align: center;
+  margin: 15px;
+  padding: 0; }
+
 h4 {
   text-align: center;
   margin: 15px;
@@ -61,14 +66,14 @@ hr {
   color: black;
   text-shadow: 0 0 10px #fff;
   position: absolute;
-  top: 986px;
+  top: 987px;
   text-align: right;
   line-height: .6rem;
-  left: 1220px;
+  left: 1200px;
   color: black;
   margin: 11px;
   letter-spacing: .225rem;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 500;
   display: inline-block; }
   .id-info p:first-child {
@@ -76,7 +81,7 @@ hr {
   .id-info p:last-child {
     letter-spacing: .1rem; }
     .id-info p:last-child strong {
-      font-weight: 500; }
+      font-weight: bolder; }
 
 .logo-perso {
   width: 60px;
@@ -99,7 +104,7 @@ button {
   color: #fff;
   text-decoration: none;
   padding: .2rem .5rem;
-  display: inline-block;
+  display: none;
   transition: all 500ms;
   border: 2px solid #842d50; }
   button:hover {

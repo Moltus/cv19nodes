@@ -58,7 +58,7 @@ const cv2019v4Layout = [
       243
     ],
     text: [
-      ">INFOGRAPHISTE 2D/3D",
+      "INFOGRAPHISTE 2D/3D",
       "Freelance 2005-2007, 2011-2018. Multimédia / Print.",
       "3D : réalisation de vidéos d'animation. Modélisation en box-modeling hi-poly / low-poly. Animation en keyframing.",
       "2D / print : création d'affiches, flyers, brochures... Utilisation des outils de la gamme Adobe tant pour du matriciel que du vectoriel."
@@ -109,52 +109,47 @@ const cv2019v4Layout = [
     type: "node",
     id: "code1",
     posXY: [
-      842,
-      669
+      837,
+      696
     ],
     text: [
       "IFOCOP DÉVELOPPEUR WEB",
       "Montigny-le-Bretonneux 2018-2019. Formation diplomante niveau II.",
-      "Front-end + back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS. E-commerce. Création de thèmes Wordpress. "
+      "Front-end + back-end. Responsive-design, référencement, outils productivité, modélisation bases de données, outils CMS."
     ],
     color: "#e5cfaa",
     image: null,
-    children: [
-      "wordpress",
-      "drupal"
-    ]
+    children: []
   },
   {
     type: "node",
     id: "code2",
     posXY: [
-      495,
-      669
+      509,
+      693
     ],
     text: [
       "FORMATIONS UDEMY.COM",
-      "\t“Web developper, Mastering the Modern Workflow”, Brad Schiff. “The Complete JavaScript Course”, Jonas Schmedtmann.",
+      "\t“Web developper, Mastering the Modern Workflow”, Brad Schiff.",
+      "“The Complete JavaScript Course”, Jonas Schmedtmann.",
       "LIVRES PROGRAMMATION",
-      "“Learning Python The Hard Way”, Zed Shaw. “Eloquent Javascript”, Marijn Haverbeke."
+      "“Learning Python The Hard Way”, Zed Shaw.",
+      "“Eloquent Javascript”, Marijn Haverbeke."
     ],
     color: "#e5cfaa",
     image: null,
-    children: [
-      "sass",
-      "gulp",
-      "git"
-    ]
+    children: []
   },
   {
     type: "node",
     id: "code3",
     posXY: [
-      495,
-      243
+      460,
+      244
     ],
     text: [
-      ">HOTEL PARIMIS",
-      "Création de site vitrine front-end complètement responsive pour un hôtel de luxe d'après cahier des charges. HTML5, SCSS, JS, Gulp, Git"
+      "HOTEL PARIMIS",
+      "Création de site front-end pour un hôtel de luxe d'après cahier des charges. HTML5, SCSS, JS, Gulp, Git"
     ],
     color: "#e5cfaa",
     image: null,
@@ -168,17 +163,16 @@ const cv2019v4Layout = [
     type: "node",
     id: "code4",
     posXY: [
-      840,
-      243
+      860,
+      242
     ],
     text: [
-      ">VEVILLE LOCATIONS",
-      "Site front + backoffice pour une agence de location de véhicules d'après cahier des charges. HTML5, Bootstrap, PHP, MySQL, Ajax, Git."
+      "VEVILLE",
+      "Site back-end pour une agence de location de véhicules d'après cahier des charges. HTML5, Bootstrap, PHP, Ajax, Git."
     ],
     color: "#e5cfaa",
     image: null,
     children: [
-      "sql",
       "php",
       "ajax"
     ]
@@ -187,11 +181,11 @@ const cv2019v4Layout = [
     type: "node",
     id: "code5",
     posXY: [
-      494,
-      437
+      460,
+      453
     ],
     text: [
-      "Création de riggings d'animation pour personnages 3D entièrement scriptés avec MaxScript et VBScript."
+      "Création de riggings d'animation scriptés en VBscript."
     ],
     color: "#e5cfaa",
     image: null,
@@ -201,11 +195,11 @@ const cv2019v4Layout = [
     type: "node",
     id: "code6",
     posXY: [
-      840,
+      792,
       435
     ],
     text: [
-      "Programme \"bot\"/solutionneur pour puzzle-game de type \"match\xa03\" (ex. Candy Crush). Python, OpenCV, Numpy."
+      "Programme \"bot\" pour puzzle-game type \"match 3\". Python, OpenCV, Numpy."
     ],
     color: "#e5cfaa",
     image: null,
@@ -251,11 +245,11 @@ const cv2019v4Layout = [
     type: "node",
     id: "comm3",
     posXY: [
-      609,
+      709,
       23
     ],
     text: [
-      ">ANGLAIS COURANT"
+      "ANGLAIS COURANT"
     ],
     color: "#9bd4d1",
     image: null,
@@ -332,8 +326,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "html5",
     posXY: [
-      485,
-      112
+      450,
+      111
     ],
     text: [],
     color: "#94763c",
@@ -344,7 +338,7 @@ const cv2019v4Layout = [
     type: "node",
     id: "css3",
     posXY: [
-      585,
+      550,
       111
     ],
     text: [],
@@ -356,8 +350,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "js",
     posXY: [
-      685,
-      110
+      650,
+      111
     ],
     text: [],
     color: "#94763c",
@@ -368,8 +362,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "gulp",
     posXY: [
-      485,
-      974
+      750,
+      111
     ],
     text: [],
     color: "#94763c",
@@ -380,8 +374,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "sass",
     posXY: [
-      585,
-      974
+      850,
+      111
     ],
     text: [],
     color: "#94763c",
@@ -390,21 +384,9 @@ const cv2019v4Layout = [
   },
   {
     type: "node",
-    id: "sql",
-    posXY: [
-      830,
-      111
-    ],
-    text: [],
-    color: "#94763c",
-    image: "images/sql-white.svg",
-    children: []
-  },
-  {
-    type: "node",
     id: "php",
     posXY: [
-      930,
+      950,
       111
     ],
     text: [],
@@ -416,8 +398,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "ajax",
     posXY: [
-      1030,
-      114
+      1050,
+      111
     ],
     text: [],
     color: "#94763c",
@@ -428,8 +410,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "git",
     posXY: [
-      685,
-      974
+      753,
+      241
     ],
     text: [],
     color: "#94763c",
@@ -438,10 +420,10 @@ const cv2019v4Layout = [
   },
   {
     type: "node",
-    id: "wordpress",
+    id: "wordpress", 
     posXY: [
-      874,
-      974
+      885,
+      907
     ],
     text: [],
     color: "#94763c",
@@ -452,8 +434,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "drupal",
     posXY: [
-      989,
-      974
+      995,
+      907
     ],
     text: [],
     color: "#94763c",
@@ -464,8 +446,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "python",
     posXY: [
-      1135,
-      396
+      1104,
+      397
     ],
     text: [],
     color: "#94763c",
@@ -476,8 +458,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "opencv",
     posXY: [
-      1135,
-      496
+      1104,
+      490
     ],
     text: [],
     color: "#94763c",
