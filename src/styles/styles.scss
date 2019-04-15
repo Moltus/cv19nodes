@@ -130,8 +130,8 @@ button {
   color: #fff;
   text-decoration: none;
   padding: .2rem .5rem;
-  // display: inline-block;
-  display: none; // for pdf printing only
+  display: inline-block;
+  // display: none; // for pdf printing only
   transition: all 500ms;
   border: 2px solid $creaColor;
 
@@ -178,14 +178,14 @@ button {
 
 
   &__image {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     padding: 0;
     border-radius: 100%;
     & img {
       padding: 10px;
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
     }
   }
 }

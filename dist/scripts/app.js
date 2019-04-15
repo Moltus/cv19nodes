@@ -34,7 +34,7 @@ function initLayout(layout) {
   }
 }
 
-initLayout(cv2019v3Layout);
+initLayout(cv2019v4Layout);
 
 const nodesInfo1 = [];
 
