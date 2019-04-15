@@ -109,8 +109,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "code1",
     posXY: [
-      837,
-      696
+      863,
+      695
     ],
     text: [
       "IFOCOP DÉVELOPPEUR WEB",
@@ -119,14 +119,17 @@ const cv2019v4Layout = [
     ],
     color: "#e5cfaa",
     image: null,
-    children: []
+    children: [
+      "wordpress",
+      "drupal"
+    ]
   },
   {
     type: "node",
     id: "code2",
     posXY: [
-      509,
-      693
+      462,
+      640
     ],
     text: [
       "FORMATIONS UDEMY.COM",
@@ -138,7 +141,11 @@ const cv2019v4Layout = [
     ],
     color: "#e5cfaa",
     image: null,
-    children: []
+    children: [
+      "sass",
+      "gulp",
+      "git"
+    ]
   },
   {
     type: "node",
@@ -173,6 +180,7 @@ const cv2019v4Layout = [
     color: "#e5cfaa",
     image: null,
     children: [
+      "bootstrap",
       "php",
       "ajax"
     ]
@@ -195,8 +203,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "code6",
     posXY: [
-      792,
-      435
+      861,
+      439
     ],
     text: [
       "Programme \"bot\" pour puzzle-game type \"match 3\". Python, OpenCV, Numpy."
@@ -245,7 +253,7 @@ const cv2019v4Layout = [
     type: "node",
     id: "comm3",
     posXY: [
-      709,
+      609,
       23
     ],
     text: [
@@ -362,8 +370,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "gulp",
     posXY: [
-      750,
-      111
+      452,
+      992
     ],
     text: [],
     color: "#94763c",
@@ -374,12 +382,24 @@ const cv2019v4Layout = [
     type: "node",
     id: "sass",
     posXY: [
+      552,
+      992
+    ],
+    text: [],
+    color: "#94763c",
+    image: "images/sass-white.svg",
+    children: []
+  },
+  {
+    type: "node",
+    id: "bootstrap",
+    posXY: [
       850,
       111
     ],
     text: [],
     color: "#94763c",
-    image: "images/sass-white.svg",
+    image: "images/bootstrap-white.svg",
     children: []
   },
   {
@@ -410,8 +430,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "git",
     posXY: [
-      753,
-      241
+      652,
+      992
     ],
     text: [],
     color: "#94763c",
@@ -423,7 +443,7 @@ const cv2019v4Layout = [
     id: "wordpress",
     posXY: [
       885,
-      907
+      957
     ],
     text: [],
     color: "#94763c",
@@ -434,8 +454,8 @@ const cv2019v4Layout = [
     type: "node",
     id: "drupal",
     posXY: [
-      995,
-      907
+      1015,
+      957
     ],
     text: [],
     color: "#94763c",
@@ -446,7 +466,7 @@ const cv2019v4Layout = [
     type: "node",
     id: "python",
     posXY: [
-      1104,
+      1154,
       397
     ],
     text: [],
@@ -458,7 +478,7 @@ const cv2019v4Layout = [
     type: "node",
     id: "opencv",
     posXY: [
-      1104,
+      1154,
       490
     ],
     text: [],
