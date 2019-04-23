@@ -154,7 +154,7 @@ const cv2019v4Layout = [
     ],
     text: [
       ">HOTEL PARIMIS",
-      "Création de site vitrine front-end complètement responsive pour un hôtel de luxe d'après cahier des charges. HTML5, SCSS, JS, Gulp, Git"
+      "Création d'un site vitrine front-end 100% responsive pour un hôtel de luxe d'après cahier des charges. HTML5, SCSS, JS, Gulp, Git."
     ],
     color: "#e5cfaa",
     image: null,
@@ -257,7 +257,7 @@ const cv2019v4Layout = [
     text: [
       ">ANGLAIS COURANT"
     ],
-    color: "#9bd4d1",
+    color: "#ffffff",
     image: null,
     children: []
   },

@@ -66,10 +66,10 @@ hr {
   color: black;
   text-shadow: 0 0 10px #fff;
   position: absolute;
-  top: 987px;
+  top: 977px;
   text-align: right;
   line-height: .6rem;
-  left: 1200px;
+  left: 1150px;
   color: black;
   margin: 11px;
   letter-spacing: .225rem;
@@ -86,8 +86,8 @@ hr {
 .logo-perso {
   width: 60px;
   position: absolute;
-  top: 1010px;
-  left: 1510px; }
+  top: 1000px;
+  left: 1470px; }
 
 .container {
   position: relative; }
