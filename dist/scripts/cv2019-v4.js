@@ -173,7 +173,7 @@ const cv2019v4Layout = [
     ],
     text: [
       ">VEVILLE LOCATIONS",
-      "Site front + backoffice pour une agence de location de véhicules d'après cahier des charges. HTML5, Bootstrap, PHP, MySQL, Ajax, Git."
+      "Site applicatif avec backoffice pour une agence de location de véhicules d'après cahier des charges. HTML5, Bootstrap, PHP, MySQL, Ajax, Git."
     ],
     color: "#e5cfaa",
     image: null,
