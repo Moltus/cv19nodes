@@ -187,7 +187,7 @@ const cv2019v4Layout = [
     id: "code5",
     posXY: [
       494,
-      407
+      412
     ],
     text: [
       "Réalisation d'un formulaire en Single Page 100% modulaire et responsive avec React JS.",
@@ -464,7 +464,7 @@ const cv2019v4Layout = [
     type: "node",
     id: "react",
     posXY: [
-      384,
+      380,
       397
     ],
     text: [],
@@ -476,7 +476,7 @@ const cv2019v4Layout = [
     type: "node",
     id: "vuejs",
     posXY: [
-      384,
+      380,
       490
     ],
     text: [],
